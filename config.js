@@ -8,5 +8,10 @@ module.exports = {
             globalSearchSelector: 'input.search-global-typeahead__input',
         }
     },
-    searchKeywords: '"freelancer.com"'
+    delayBetweenPages: {
+        minTime: 30,
+        maxTime: 180,
+        timeType: 'minutes' // options: 'seconds' | 'minutes' | 'hours' | 'days'
+    },
+    searchKeywords: 'freelancer.com'
 };

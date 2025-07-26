@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const { waitInMiliSec } = require('../utils/utils');
 const { randomScroll } = require('../utils/human');
+const { delayBetweenPages } = require('../config');
+
 const finalProfiles = [];
 
 async function extractProfileUrls(page, browser) {
@@ -44,13 +46,12 @@ async function extractProfileUrls(page, browser) {
         // After each page: go to home, scroll randomly
         await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
         await randomScroll(page);
-        const minHours = 2;
-        const maxHours = 3;
-        const waitHours = Math.random() * (maxHours - minHours) + minHours;
-        const waitMs = waitHours * 60 * 60 * 1000;
 
-        console.log(`⏳ Waiting for ~${waitHours.toFixed(2)} hours before next page...`);
-        await waitInMiliSec(waitMs, true);
+        const randomDelay = Math.floor(Math.random() * (delayBetweenPages.maxTime - delayBetweenPages.minTime + 1)) + delayBetweenPages.minTime;
+        const delayMs = convertToMs(randomDelay, delayBetweenPages.timeType);
+
+        console.log(`⏳ Waiting ~${randomDelay} ${delayBetweenPages.timeType} before next page...`);
+        await waitInMiliSec(delayMs, true);
 
         currentPage++;
     }

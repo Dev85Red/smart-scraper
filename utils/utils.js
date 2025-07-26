@@ -10,5 +10,14 @@ module.exports = {
         const finalWait = Math.floor(Math.random() * (ms - lowerBound + 1)) + lowerBound;
 
         return new Promise(resolve => setTimeout(resolve, finalWait));
+    },
+    convertToMs(value, unit) {
+        const map = {
+            seconds: 1000,
+            minutes: 60 * 1000,
+            hours: 60 * 60 * 1000,
+            days: 24 * 60 * 60 * 1000
+        };
+        return value * map[unit];
     }
 }
