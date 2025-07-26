@@ -6,7 +6,7 @@ const { platforms } = require('./config');
 
 // Import the LinkedIn runner
 const runLinkedIn = require('./runners/linkedin');
-
+const { waitInMiliSec } = require('./utils/utils');
 
 puppeteer.use(StealthPlugin());
 
@@ -27,9 +27,16 @@ puppeteer.use(StealthPlugin());
     console.log(`🌐 Launching ${platformName}...`);
     await page.goto(platformConfig.url, { waitUntil: 'networkidle2' });
 
-    console.log('🔒 Please log in manually...');
-    await page.waitForNavigation({ waitUntil: 'networkidle2' });
+    const loginSelector = platformConfig.loginBtnSelector;
+    const loginButtonVisible = await page.$(loginSelector);
+
+    if (loginButtonVisible) {
+        console.log('🔒 Please log in manually...');
+        const globalSearchSelector = platformConfig.globalSearchSelector;
+        await page.waitForSelector(globalSearchSelector);
+    }
 
     console.log(`✅ Logged in to ${platformName}. Ready for next step.`);
-    await runLinkedIn(page);
+    await waitInMiliSec(2000);
+    await runLinkedIn(page, browser);
 })();

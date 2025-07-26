@@ -2,10 +2,11 @@
 module.exports = {
     platforms: {
         linkedin: {
-            url: 'https://www.linkedin.com/',
-            enabled: true
-        },
-        // future platforms: twitter, reddit, etc.
+            url: 'https://www.linkedin.com/login',
+            enabled: true,
+            loginBtnSelector: '#organic-div > form > div.login__form_action_container > button',
+            globalSearchSelector: 'input.search-global-typeahead__input',
+        }
     },
-    searchKeywords: ['"Automation" Engineer"', '"N8N" Engineer', '"freelancer.com" Developer'],
+    searchKeywords: '"freelancer.com"'
 };
