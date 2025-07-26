@@ -6,42 +6,56 @@ const { randomScroll } = require('../utils/human');
 const finalProfiles = [];
 
 async function extractProfileUrls(page, browser) {
-    console.log('🔗 Extracting user profile URLs...');
+    let currentPage = 1;
+    const baseUrl = page.url().split('&page=')[0]; // current search URL
+    const dateStr = new Date().toISOString().split('T')[0];
 
-    const profileButtons = await page.$$('.linked-area');
+    while (true) {
+        console.log(`📄 Scraping page ${currentPage}`);
 
-    const urls = [];
+        await page.goto(`${baseUrl}&page=${currentPage}`, { waitUntil: 'networkidle2' });
+        await waitInMiliSec(2000, true);
+        await randomScroll(page);
+        await waitInMiliSec(2000, true);
 
-    for (let i = 0; i < profileButtons.length; i++) {
-        console.log(`🧭 Visiting search result ${i + 1}/${profileButtons.length}`);
+        const profileButtons = await page.$$('.linked-area');
+        if (profileButtons.length === 0) break;
 
-        try {
+        const pageProfiles = [];
+
+        for (let i = 0; i < profileButtons.length; i++) {
             const anchor = await profileButtons[i].$('div > div.mb1 div > div.display-flex span span a');
-
-            if (!anchor) {
-                console.log('⛔️ No valid profile link found, skipping.');
-                continue;
-            }
+            if (!anchor) continue;
 
             const href = await page.evaluate(el => el.href, anchor);
             if (href.includes('/in/')) {
-                console.log(`✅ Collected: ${href}`);
-                urls.push(href);
                 const profileData = await scrapeSingleProfile(href, browser);
-                finalProfiles.push(profileData);
+                pageProfiles.push(profileData);
             }
 
-            await waitInMiliSec(800 + Math.random() * 400);
-        } catch (err) {
-            console.log(`❌ Error on result ${i + 1}:`, err.message);
+            await waitInMiliSec(1000, true);
         }
+
+        const filename = `profile-details-${dateStr}-page${currentPage}.json`;
+        const filepath = path.join(__dirname, '../output', filename);
+        fs.writeFileSync(filepath, JSON.stringify(pageProfiles, null, 2));
+        console.log(`💾 Page ${currentPage} saved to ${filename}`);
+
+        // After each page: go to home, scroll randomly
+        await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
+        await randomScroll(page);
+        const minHours = 2;
+        const maxHours = 3;
+        const waitHours = Math.random() * (maxHours - minHours) + minHours;
+        const waitMs = waitHours * 60 * 60 * 1000;
+
+        console.log(`⏳ Waiting for ~${waitHours.toFixed(2)} hours before next page...`);
+        await waitInMiliSec(waitMs, true);
+
+        currentPage++;
     }
 
-    const unique = [...new Set(urls)];
-
-    const profileDetailsPath = path.join(__dirname, '../output/profile-details.json');
-    fs.writeFileSync(profileDetailsPath, JSON.stringify(finalProfiles, null, 2));
-    console.log(`💾 Saved ${finalProfiles.length} full profiles to ${profileDetailsPath}`);
+    console.log('🎯 Finished scraping all pages.');
 }
 
 async function extractCompaniesUrls(page) {
