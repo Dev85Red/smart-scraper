@@ -16,9 +16,9 @@ async function extractProfileUrls(page, browser) {
         console.log(`📄 Scraping page ${currentPage}`);
 
         await page.goto(`${baseUrl}&page=${currentPage}`, { waitUntil: 'networkidle2' });
-        await waitInMiliSec(2000, true);
+        await waitInMiliSec(500, true);
         await randomScroll(page);
-        await waitInMiliSec(2000, true);
+        await waitInMiliSec(500, true);
 
         const profileButtons = await page.$$('.linked-area');
         if (profileButtons.length === 0) break;
@@ -35,7 +35,7 @@ async function extractProfileUrls(page, browser) {
                 pageProfiles.push(profileData);
             }
 
-            await waitInMiliSec(1000, true);
+            await waitInMiliSec(300, true);
         }
 
         const filename = `profile-details-${dateStr}-page${currentPage}.json`;
@@ -79,10 +79,10 @@ async function extractCompaniesUrls(page) {
 async function scrapeSingleProfile(href, browser) {
     const page = await browser.newPage();
     await page.goto(href, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await waitInMiliSec(1500, true);
+    await waitInMiliSec(150, true);
 
     await randomScroll(page);
-    await waitInMiliSec(1500, true);
+    await waitInMiliSec(50, true);
 
     const data = {
         url: href,
@@ -96,14 +96,14 @@ async function scrapeSingleProfile(href, browser) {
         el => el.innerText.trim()
     ).catch(() => null);
 
-    await waitInMiliSec(1500, true);
+    await waitInMiliSec(100, true);
 
     data.designation = await page.$eval(
         '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) > div > div:last-child',
         el => el.innerText.trim().split('\n').slice(0, 2).join(' | ')
     ).catch(() => null);
 
-    await waitInMiliSec(1500, true);
+    await waitInMiliSec(50, true);
 
     const contactBtn = await page.$(
         '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) a#top-card-text-details-contact-info'
@@ -113,7 +113,7 @@ async function scrapeSingleProfile(href, browser) {
         await contactBtn.click();
         await page.waitForSelector('#artdeco-modal-outlet section.pv-contact-info__contact-type', { timeout: 5000 }).catch(() => null);
 
-        await waitInMiliSec(1500, true);
+        await waitInMiliSec(300, true);
         data.email = await page.$$eval(
             '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="mailto:"]',
             nodes => nodes.length > 0 ? nodes[0].innerText.trim() : null
