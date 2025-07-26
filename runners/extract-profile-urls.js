@@ -1,7 +1,7 @@
 // runners/extract-profile-urls.js
 const fs = require('fs');
 const path = require('path');
-const { waitInMiliSec } = require('../utils/utils');
+const { waitInMiliSec, convertToMs } = require('../utils/utils');
 const { randomScroll } = require('../utils/human');
 const { delayBetweenPages } = require('../config');
 
