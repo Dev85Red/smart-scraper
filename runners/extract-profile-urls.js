@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { waitInMiliSec } = require('../utils/utils');
+const { waitInMiliSec, convertToMs } = require('../utils/utils');
 const { randomScroll } = require('../utils/human');
 const { getBrowser } = require('../globals/browser');
 const { delayBetweenPages } = require('../config');
@@ -134,17 +134,7 @@ async function scrapeSingleProfile(href) {
             el => el.innerText.trim().split('\n').slice(0, 2).join(' | ')
         ).catch(() => null);
 
-        await waitInMiliSec(1500, true);
-
-        data.website = await page.$$eval(
-            '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="http"]:not([href*="linkedin.com"])',
-            nodes => {
-                const websites = nodes.map(n => n.href);
-                return websites.length ? websites[0] : null;
-            }
-        ).catch(() => null);
-
-        await waitInMiliSec(1500, true);
+        await waitInMiliSec(150, true);
 
         const contactBtn = await page.$(
             '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) a#top-card-text-details-contact-info'
@@ -159,6 +149,16 @@ async function scrapeSingleProfile(href) {
                 data.email = await page.$$eval(
                     '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="mailto:"]',
                     nodes => nodes.length > 0 ? nodes[0].innerText.trim() : null
+                ).catch(() => null);
+
+                await waitInMiliSec(50, true);
+
+                data.website = await page.$$eval(
+                    '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="http"]:not([href*="linkedin.com"])',
+                    nodes => {
+                        const websites = nodes.map(n => n.href);
+                        return websites.length ? websites[0] : null;
+                    }
                 ).catch(() => null);
             } catch (err) {
                 console.warn('⚠️ Failed to extract email:', err.message);

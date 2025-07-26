@@ -1,5 +1,5 @@
 // index.js
-
+require('dotenv').config();
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const { platforms } = require('./config');
@@ -13,7 +13,7 @@ puppeteer.use(StealthPlugin());
     let browser;
     try {
         browser = await puppeteer.launch({
-            headless: false, // initially for manual login
+            headless: process.env.HEADLESS === 'true', // initially for manual login
             userDataDir: './.auth/linkedIn', // persist session
             defaultViewport: null,
             args: ['--start-maximized'],
