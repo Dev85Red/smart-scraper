@@ -10,7 +10,7 @@ module.exports = {
     },
     delayBetweenPages: {
         minTime: 1,
-        maxTime: 15,
+        maxTime: 5,
         timeType: 'minutes' // options: 'seconds' | 'minutes' | 'hours' | 'days'
     },
     searchKeywords: 'freelancer.com'
