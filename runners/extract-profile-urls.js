@@ -3,6 +3,7 @@ const path = require('path');
 const { waitInMiliSec } = require('../utils/utils');
 const { randomScroll } = require('../utils/human');
 const { getBrowser } = require('../globals/browser');
+const { delayBetweenPages } = require('../config');
 
 const finalProfiles = [];
 
@@ -36,7 +37,7 @@ async function extractProfileUrls(page) {
             const pageProfiles = [];
 
             for (let i = 0; i < profileButtons.length; i++) {
-                console.log(`🧭 Visiting search result ${i + 1}/${profileButtons.length}`);
+                // console.log(`🧭 Visiting search result ${i + 1}/${profileButtons.length}`);
                 try {
                     const anchor = await profileButtons[i].$('div > div.mb1 div > div.display-flex span span a');
                     if (!anchor) continue;
@@ -62,9 +63,11 @@ async function extractProfileUrls(page) {
             await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
             await randomScroll(page);
 
-            const delay = Math.floor(Math.random() * (90 - 30 + 1)) + 30; // 30–90 mins
-            console.log(`⏳ Waiting for ~${delay} minutes before next page...`);
-            await waitInMiliSec(delay * 60 * 1000, true);
+            const randomDelay = Math.floor(Math.random() * (delayBetweenPages.maxTime - delayBetweenPages.minTime + 1)) + delayBetweenPages.minTime;
+            const delayMs = convertToMs(randomDelay, delayBetweenPages.timeType);
+
+            console.log(`⏳ Waiting ~${randomDelay} ${delayBetweenPages.timeType} before next page...`);
+            await waitInMiliSec(delayMs, true);
 
             currentPage++;
 
@@ -108,7 +111,8 @@ async function scrapeSingleProfile(href) {
         url: href,
         name: null,
         designation: null,
-        email: null
+        email: null,
+        website: null // ✅ new
     };
 
     try {
@@ -128,6 +132,16 @@ async function scrapeSingleProfile(href) {
         data.designation = await page.$eval(
             '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) > div > div:last-child',
             el => el.innerText.trim().split('\n').slice(0, 2).join(' | ')
+        ).catch(() => null);
+
+        await waitInMiliSec(1500, true);
+
+        data.website = await page.$$eval(
+            '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="http"]:not([href*="linkedin.com"])',
+            nodes => {
+                const websites = nodes.map(n => n.href);
+                return websites.length ? websites[0] : null;
+            }
         ).catch(() => null);
 
         await waitInMiliSec(1500, true);

@@ -3,3 +3,4 @@ misc
 .env
 output
 dist
+.auth

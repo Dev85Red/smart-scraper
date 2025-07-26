@@ -13,13 +13,14 @@ puppeteer.use(StealthPlugin());
     let browser;
     try {
         browser = await puppeteer.launch({
-            headless: false,
+            headless: false, // initially for manual login
+            userDataDir: './.auth/linkedIn', // persist session
             defaultViewport: null,
             args: ['--start-maximized'],
             protocolTimeout: 60000
         });
 
-        setBrowser(browser); // globally set
+        setBrowser(browser);
 
         const page = await browser.newPage();
 
@@ -31,31 +32,43 @@ puppeteer.use(StealthPlugin());
         console.log(`🌐 Launching ${platformName}...`);
 
         try {
-            await page.goto(platformConfig.url, { waitUntil: 'networkidle2' });
+            await page.goto(platformConfig.url, {
+                waitUntil: 'networkidle2',
+                timeout: 10000 // or 60000 for safety
+            });
         } catch (err) {
-            console.error(`❌ Failed to load ${platformName} URL:`, err.message);
+            console.error(`❌ Failed to load ${platformName} URL:`, err);
+            // return;
+        }
+
+        try {
+            const globalSearchSelector = platformConfig.globalSearchSelector;
+
+            const isLoggedIn = await page.$(globalSearchSelector);
+            if (!isLoggedIn) {
+                console.log('🔒 Not logged in. Please log in manually...');
+                await page.waitForSelector(globalSearchSelector, { timeout: 180000 });
+            }
+
+            console.log(`✅ Logged in to ${platformName}. Ready for next step.`);
+        } catch (err) {
+            console.error('❌ Login wait timeout or selector error:', err.message);
             return;
         }
 
-        const loginSelector = platformConfig.loginBtnSelector;
-        const loginButtonVisible = await page.$(loginSelector);
-
-        if (loginButtonVisible) {
-            console.log('🔒 Please log in manually...');
-            try {
-                const globalSearchSelector = platformConfig.globalSearchSelector;
-                await page.waitForSelector(globalSearchSelector, { timeout: 180000 });
-            } catch (err) {
-                console.error('❌ Login wait timeout or selector error:', err.message);
-                return;
-            }
-        }
-
-        console.log(`✅ Logged in to ${platformName}. Ready for next step.`);
         await waitInMiliSec(2000);
-        await runLinkedIn(page); // browser is now accessible globally
+        await runLinkedIn(page);
 
     } catch (err) {
         console.error('❌ Unexpected error in main workflow:', err.message);
+    } finally {
+        if (browser) {
+            try {
+                await browser.close();
+                console.log('✅ Browser closed successfully.');
+            } catch (closeErr) {
+                console.error('❌ Error closing browser:', closeErr.message);
+            }
+        }
     }
 })();
