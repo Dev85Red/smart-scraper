@@ -13,15 +13,14 @@ puppeteer.use(StealthPlugin());
     let browser;
     try {
         browser = await puppeteer.launch({
-            headless: process.env.HEADLESS === 'true', // initially for manual login
-            userDataDir: './.auth/linkedIn', // persist session
+            headless: process.env.HEADLESS === 'true',
+            userDataDir: './.auth/linkedIn',
             defaultViewport: null,
             args: ['--start-maximized'],
             protocolTimeout: 60000
         });
 
         setBrowser(browser);
-
         const page = await browser.newPage();
 
         const target = Object.entries(platforms).find(([_, p]) => p.enabled);
@@ -33,18 +32,18 @@ puppeteer.use(StealthPlugin());
 
         try {
             await page.goto(platformConfig.url, {
-                waitUntil: 'networkidle2',
-                timeout: 10000 // or 60000 for safety
+                waitUntil: 'load',
+                timeout: 60000
             });
         } catch (err) {
-            console.error(`❌ Failed to load ${platformName} URL:`, err);
-            // return;
+            console.error(`❌ Failed to load ${platformName} URL:`, err.message);
+            return;
         }
 
         try {
             const globalSearchSelector = platformConfig.globalSearchSelector;
-
             const isLoggedIn = await page.$(globalSearchSelector);
+
             if (!isLoggedIn) {
                 console.log('🔒 Not logged in. Please log in manually...');
                 await page.waitForSelector(globalSearchSelector, { timeout: 180000 });

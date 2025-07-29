@@ -9,10 +9,15 @@ module.exports = async function runLinkedIn(page) {
   console.log('🔍 Starting LinkedIn scraping logic...');
 
   try {
-    await page.waitForSelector('input.search-global-typeahead__input');
-    await page.click('input.search-global-typeahead__input');
-    await humanType(page, 'input.search-global-typeahead__input', searchKeywords);
-    await page.keyboard.press('Enter');
+    try {
+      await page.waitForSelector('input.search-global-typeahead__input', { visible: true, timeout: 30000 });
+      await page.click('input.search-global-typeahead__input');
+      await humanType(page, 'input.search-global-typeahead__input', searchKeywords);
+      await page.keyboard.press('Enter');
+    } catch (err) {
+      console.error('❌ Search bar not found or not visible:', err.message);
+      return;
+    }
 
     await waitInMiliSec(1000, true);
 
@@ -21,10 +26,15 @@ module.exports = async function runLinkedIn(page) {
     const peopleBtnSelector = '#search-reusables__filters-bar > ul > li:nth-child(1) > button';
 
     try {
-      await page.waitForSelector(peopleBtnSelector, { timeout: 10000 });
-      await page.click(peopleBtnSelector);
+      await page.waitForSelector(peopleBtnSelector, { visible: true, timeout: 15000 });
+      const btn = await page.$(peopleBtnSelector);
+      if (btn) {
+        await btn.click();
+      } else {
+        console.warn('⚠️ People button not found.');
+      }
     } catch (err) {
-      console.warn('⚠️ Failed to find or click people filter:', err.message);
+      console.warn('⚠️ Failed to interact with people filter:', err.message);
     }
 
     await waitInMiliSec(1000, true);

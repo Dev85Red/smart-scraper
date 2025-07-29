@@ -4,6 +4,7 @@ const { waitInMiliSec, convertToMs } = require('../utils/utils');
 const { randomScroll } = require('../utils/human');
 const { getBrowser } = require('../globals/browser');
 const { delayBetweenPages } = require('../config');
+const { timeout } = require('puppeteer');
 
 const finalProfiles = [];
 
@@ -15,7 +16,7 @@ async function extractProfileUrls(page) {
     }
 
     console.log('🔗 Extracting user profile URLs...');
-    let currentPage = 1;
+    let currentPage = 17;
     const baseUrl = page.url().split('&page=')[0];
     const dateStr = new Date().toISOString().split('T')[0];
 
@@ -23,10 +24,10 @@ async function extractProfileUrls(page) {
         try {
             console.log(`📄 Scraping page ${currentPage}`);
 
-            await page.goto(`${baseUrl}&page=${currentPage}`, { waitUntil: 'networkidle2' });
-            await waitInMiliSec(2000, true);
+            await page.goto(`${baseUrl}&page=${currentPage}`, { waitUntil: 'load', timeout: 20000 });
+            await waitInMiliSec(20000, true);
             await randomScroll(page);
-            await waitInMiliSec(2000, true);
+            await waitInMiliSec(20000, true);
 
             const profileButtons = await page.$$('.linked-area');
             if (!profileButtons || profileButtons.length === 0) {
@@ -48,7 +49,7 @@ async function extractProfileUrls(page) {
                         pageProfiles.push(profileData);
                     }
 
-                    await waitInMiliSec(1000, true);
+                    await waitInMiliSec(10000, true);
                 } catch (err) {
                     console.warn(`⚠️ Error scraping profile ${i + 1}:`, err.message);
                 }
@@ -117,24 +118,24 @@ async function scrapeSingleProfile(href) {
 
     try {
         await page.goto(href, { waitUntil: 'domcontentloaded', timeout: 60000 });
-        await waitInMiliSec(1500, true);
+        await waitInMiliSec(15000, true);
 
         await randomScroll(page);
-        await waitInMiliSec(1500, true);
+        await waitInMiliSec(15000, true);
 
         data.name = await page.$eval(
             '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) > div span a h1',
             el => el.innerText.trim()
         ).catch(() => null);
 
-        await waitInMiliSec(1500, true);
+        await waitInMiliSec(15000, true);
 
         data.designation = await page.$eval(
             '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) > div > div:last-child',
             el => el.innerText.trim().split('\n').slice(0, 2).join(' | ')
         ).catch(() => null);
 
-        await waitInMiliSec(150, true);
+        await waitInMiliSec(1500, true);
 
         const contactBtn = await page.$(
             '#profile-content > div > div.scaffold-layout.scaffold-layout--main-aside > div > div > main > section > div.ph5:nth-child(2) > div:nth-child(2) a#top-card-text-details-contact-info'
@@ -144,14 +145,14 @@ async function scrapeSingleProfile(href) {
             try {
                 await contactBtn.click();
                 await page.waitForSelector('#artdeco-modal-outlet section.pv-contact-info__contact-type', { timeout: 5000 });
-                await waitInMiliSec(1500, true);
+                await waitInMiliSec(15000, true);
 
                 data.email = await page.$$eval(
                     '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="mailto:"]',
                     nodes => nodes.length > 0 ? nodes[0].innerText.trim() : null
                 ).catch(() => null);
 
-                await waitInMiliSec(50, true);
+                await waitInMiliSec(500, true);
 
                 data.website = await page.$$eval(
                     '#artdeco-modal-outlet section.pv-contact-info__contact-type a[href^="http"]:not([href*="linkedin.com"])',
