@@ -2,12 +2,15 @@
 require('dotenv').config();
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const sendConnectionRequests = require('./runners/send-connection');
 const { platforms } = require('./config');
 const runLinkedIn = require('./runners/linkedin');
 const { waitInMiliSec } = require('./utils/utils');
 const { setBrowser } = require('./globals/browser');
 
 puppeteer.use(StealthPlugin());
+
+const isConnectMode = process.argv.includes('--send-connect');
 
 (async () => {
     let browser;
@@ -56,6 +59,12 @@ puppeteer.use(StealthPlugin());
         }
 
         await waitInMiliSec(2000);
+
+        if (isConnectMode) {
+            await sendConnectionRequests(browser);
+            return;
+        }
+        
         await runLinkedIn(page);
 
     } catch (err) {
