@@ -32,7 +32,7 @@ const PROJECT_FILE = path.join(__dirname, '../misc/project.md');
                 profile.message = id;
             } catch (err) {
                 console.warn(`⚠️ Failed to generate message for: ${key} – ${err.message}`);
-                profile.message = null;
+                profile.message = getFallbackMessage(aboutProject, key);
             }
         } else {
             profile.message = seenCombos[key] || null;
