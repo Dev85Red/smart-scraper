@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { generateMessage } = require('../utils/openrouter');
+const { generateMessage } = require('../openrouter/generate-message-content.js');
 
 // === CONFIG ===
 const PROFILE_PATH = path.join(__dirname, '../output/profile-details.json');

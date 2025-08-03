@@ -3,648 +3,756 @@
     "id": 1,
     "key": "flutter specialist",
     "designation": "flutter specialist",
-    "content": "Hey there! I noticed you're a Flutter specialist, and I thought you might be interested in Orbity. Our platform streamlines project management and automates tasks, giving you more time to focus on coding. Excited to chat more about how Orbity can enhance your Flutter projects? Interested in a demo? Let's connect!"
+    "content": "Hey [Name]! I noticed you're a Flutter specialist, and I thought you might be interested in Orbity. Our platform streamlines project management and automates tasks, giving you more time to focus on coding. Excited to chat more about how Orbity can enhance your Flutter projects? Interested in a demo? Let's connect!",
+    "subject": "Boost Your Flutter Projects with Orbity! 🚀"
   },
   {
     "id": 2,
     "key": "freelance at freelancer.com",
     "designation": "freelance at freelancer.com",
-    "content": "Hey [Name], as a fellow freelancer on freelancer.com, I know the hustle of project hunting. Orbity streamlines this process, saving you time to focus on your craft. Interested in simplifying your workflow? Let's chat! 🚀 #FreelancerLife"
+    "content": "Hey [Name], as a fellow freelancer on freelancer.com, I know the hustle of project hunting. Orbity streamlines this process, saving you time to focus on your craft. Interested in simplifying your workflow? Let's chat! 🚀 #FreelancerLife",
+    "subject": "Streamline Your Project Hunt with Orbity! 🌟"
   },
   {
     "id": 3,
     "key": "freelance writer at freelancer.com",
     "designation": "freelance writer at freelancer.com",
-    "content": "Hey [Name], as a freelance writer on freelancer.com, imagine saving hours on project hunting and bidding with Orbity's smart automation. Boost your writing productivity effortlessly! Interested in early access to streamline your freelance workflow? Let's chat!"
+    "content": "Hey [Name], as a freelance writer on freelancer.com, imagine saving hours on project hunting and bidding with Orbity's smart automation. Boost your writing productivity effortlessly! Interested in early access to streamline your freelance workflow? Let's chat!",
+    "subject": "Boost Writing Productivity with Orbity's Smart Automation!"
   },
   {
     "id": 4,
     "key": "pursuing experience in web and app designing.",
     "designation": "pursuing experience in web and app designing.",
-    "content": "Hey [Name]! As a web and app designer, imagine streamlining your project workflows with Orbity. Automate time-consuming tasks and focus on creativity! Interested in trying it out? ✨"
+    "content": "Hey [Name]! As a web and app designer, imagine streamlining your project workflows with Orbity. Automate time-consuming tasks and focus on creativity! Interested in trying it out? ✨",
+    "subject": "Boost Creativity & Efficiency with Orbity! 🚀"
   },
   {
     "id": 5,
     "key": "graphic design",
     "designation": "graphic design",
-    "content": "Hey [Name]! As a graphic designer, imagine automating project searching & optimizing bids effortlessly with Orbity. Boost your productivity and take control. Interested in early access?"
+    "content": "Hey [Name]! As a graphic designer, imagine automating project searching & optimizing bids effortlessly with Orbity. Boost your productivity and take control. Interested in early access?",
+    "subject": "Boost Productivity with Orbity: Early Access Available!"
   },
   {
     "id": 6,
     "key": "full-stack developer",
     "designation": "full-stack developer",
-    "content": "Hey [Name]! As a full-stack developer, imagine streamlining project hunting and bid optimization with Orbity. Boost your productivity and simplify workflows. Interested in early access? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a full-stack developer, imagine streamlining project hunting and bid optimization with Orbity. Boost your productivity and simplify workflows. Interested in early access? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Optimize Project Bidding with Orbity: Early Access Available!"
   },
   {
     "id": 7,
     "key": "web developer",
     "designation": "web developer",
-    "content": "Hey there! As a fellow web developer, I know the struggle of juggling multiple projects. With Orbity, automate project hunting and bidding, giving you more time to focus on coding. Interested in simplifying your workflow? Let's chat! #WebDeveloper #ProjectManagement"
+    "content": "Hey [Name]! As a fellow web developer, I know the struggle of juggling multiple projects. With Orbity, automate project hunting and bidding, giving you more time to focus on coding. Interested in simplifying your workflow? Let's chat! #WebDeveloper #ProjectManagement",
+    "subject": "Streamline Your Workflow with Orbity! Let's Connect"
   },
   {
     "id": 8,
     "key": "seo consultant",
     "designation": "seo consultant",
-    "content": "Hey [Name], as a SEO consultant, imagine streamlining project hunting and bid optimization with Orbity to boost client acquisition and productivity effortlessly. Interested in a demo? Let's chat! #FreelancerLife"
+    "content": "Hey [Name], as a SEO consultant, imagine streamlining project hunting and bid optimization with Orbity to boost client acquisition and productivity effortlessly. Interested in a demo? Let's chat! #FreelancerLife",
+    "subject": "Boost Client Acquisition Effortlessly with Orbity Demo!"
   },
   {
     "id": 9,
     "key": "digital marketing at freelancer.com",
     "designation": "digital marketing at freelancer.com",
-    "content": "Hey [Name], as a digital marketing pro at freelancer.com, imagine automating project hunting and optimizing bids with Orbity! Boost your efficiency and win more work effortlessly. Interested in early access? 🚀 #freelancing #productivity"
+    "content": "Hey [Name], as a digital marketing pro at freelancer.com, imagine automating project hunting and optimizing bids with Orbity! Boost your efficiency and win more work effortlessly. Interested in early access? 🚀 #freelancing #productivity",
+    "subject": "Boost Your Freelance Success with Orbity! 🚀"
   },
   {
     "id": 10,
     "key": "cyber security student",
     "designation": "cyber security student",
-    "content": "Hey [Name]! As a cyber security student, you'll love Orbity's advanced project automation to streamline freelance workflows. Interested in maximizing your efficiency? Let's connect! 🚀"
+    "content": "Hey [Name]! As a cyber security student, you'll love Orbity's advanced project automation to streamline freelance workflows. Interested in maximizing your efficiency? Let's connect! 🚀",
+    "subject": "Boost Your Efficiency with Orbity's Automation Tools!"
   },
   {
     "id": 11,
     "key": "--python",
     "designation": "--python",
-    "content": "Hey there, as a Python developer, I thought you'd appreciate how Orbity streamlines project hunting and bidding with intelligent automation. Interested in boosting your freelancing game with Orbity? Let's connect! 🚀"
+    "content": "Hey [Name], as a Python developer, I thought you'd appreciate how Orbity streamlines project hunting and bidding with intelligent automation. Interested in boosting your freelancing game with Orbity? Let's connect! 🚀",
+    "subject": "Boost Your Freelancing Game with Orbity! 🚀"
   },
   {
     "id": 12,
     "key": "\"seo & sem expert",
     "designation": "\"seo & sem expert",
-    "content": "Hey [Name], as a savvy SEO & SEM expert, imagine streamlining project hunting and bid submissions with AI-powered optimization through Orbity – saving you hours and winning more work effortlessly. Interested in leveling up your freelancing game? 🚀"
+    "content": "Hey [Name], as a savvy SEO & SEM expert, imagine streamlining project hunting and bid submissions with AI-powered optimization through Orbity – saving you hours and winning more work effortlessly. Interested in leveling up your freelancing game? 🚀",
+    "subject": "Boost Your Freelancing Game with Orbity's AI Optimization!"
   },
   {
     "id": 13,
     "key": "python developer at freelancer.com",
     "designation": "python developer at freelancer.com",
-    "content": "Hey [Name]! As a Python developer at freelancer.com, imagine streamlining your project hunting and bidding process seamlessly with Orbity. Interested in early access? Let's chat!"
+    "content": "Hey [Name]! As a Python developer at freelancer.com, imagine streamlining your project hunting and bidding process seamlessly with Orbity. Interested in early access? Let's chat!",
+    "subject": "Boost Your Project Bidding with Orbity - Early Access!"
   },
   {
     "id": 14,
     "key": "linguist",
     "designation": "linguist",
-    "content": "Hey [Name]! As a linguist, imagine effortlessly discovering and bidding on optimized freelance projects with Orbity's AI-powered system. Interested in boosting your productivity? Let's connect and explore Orbity together! 🚀"
+    "content": "Hey [Name]! As a linguist, imagine effortlessly discovering and bidding on optimized freelance projects with Orbity's AI-powered system. Interested in boosting your productivity? Let's connect and explore Orbity together! 🚀",
+    "subject": "Boost Your Freelance Productivity with Orbity! 🚀"
   },
   {
     "id": 15,
     "key": "virtual assistant @ amazon va",
     "designation": "virtual assistant @ amazon va",
-    "content": "Hey there! As a virtual assistant at Amazon, imagine streamlining your tasks with Orbity. Automate project hunting, boost productivity, and stay in control effortlessly. Interested in simplifying your freelancing workflows? Let's chat! 🚀"
+    "content": "Hey [Name]! As a virtual assistant at Amazon, imagine streamlining your tasks with Orbity. Automate project hunting, boost productivity, and stay in control effortlessly. Interested in simplifying your freelancing workflows? Let's chat! 🚀",
+    "subject": "Boost Your Freelancing Productivity with Orbity! 🚀"
   },
   {
     "id": 16,
     "key": "search engine optimization specialist at freelancer.com",
     "designation": "search engine optimization specialist at freelancer.com",
-    "content": "Hey there! As a search engine optimization specialist on freelancer.com, you'll love how Orbity streamlines project hunting and bidding tasks, giving you more time to focus on optimizing websites. Interested in early access? Let's chat! 🚀"
+    "content": "Hey [Name]! As a search engine optimization specialist on freelancer.com, you'll love how Orbity streamlines project hunting and bidding tasks, giving you more time to focus on optimizing websites. Interested in early access? Let's chat! 🚀",
+    "subject": "Boost SEO Efficiency with Orbity: Early Access Available!"
   },
   {
     "id": 17,
     "key": "freelancer",
     "designation": "freelancer",
-    "content": "Hey [Name]! As a fellow freelancer, I know the struggles of juggling multiple projects. With Orbity, automate project hunting and bid smarter to win more work effortlessly. Interested in simplifying your freelance life? Let's chat! 🚀 #FreelancerLife"
+    "content": "Hey [Name]! As a fellow freelancer, I know the struggles of juggling multiple projects. With Orbity, automate project hunting and bid smarter to win more work effortlessly. Interested in simplifying your freelance life? Let's chat! 🚀 #FreelancerLife",
+    "subject": "Streamline Your Freelance Success with Orbity Today!"
   },
   {
     "id": 18,
     "key": "freelance graphic designer at freelancer.com",
     "designation": "freelance graphic designer at freelancer.com",
-    "content": "Hey [Name]! As a freelance graphic designer on Freelancer.com, imagine spending less time hunting for projects and more time creating stunning designs with Orbity's automated project discovery and optimized bidding. Interested in boosting your productivity effortlessly? Let's chat! 🚀"
+    "content": "Hey [Name]! As a freelance graphic designer on Freelancer.com, imagine spending less time hunting for projects and more time creating stunning designs with Orbity's automated project discovery and optimized bidding. Interested in boosting your productivity effortlessly? Let's chat! 🚀",
+    "subject": "Boost Productivity with Orbity's Project Discovery Tool! 🚀"
   },
   {
     "id": 19,
     "key": "ceo & co-founder at befair tech",
     "designation": "ceo & co-founder at befair tech",
-    "content": "Hey [CEO Name]! As a Co-Founder of BeFair Tech, you're always looking to streamline processes. Orbity can automate project hunting and bidding tasks, saving you time and boosting productivity. Interested in seeing how it works? Let's connect! 🚀"
+    "content": "Hey [CEO Name]! As a Co-Founder of BeFair Tech, you're always looking to streamline processes. Orbity can automate project hunting and bidding tasks, saving you time and boosting productivity. Interested in seeing how it works? Let's connect! 🚀",
+    "subject": "Boost Productivity with Orbity: Let's Connect!"
   },
   {
     "id": 20,
     "key": "talent acquisition specialist",
     "designation": "talent acquisition specialist",
-    "content": "Hey [Name]! As a talent acquisition specialist, imagine streamlining freelancer sourcing effortlessly with Orbity's automated project hunting and optimized bidding. Interested in simplifying your recruitment process? Let's connect! 🚀"
+    "content": "Hey [Name]! As a talent acquisition specialist, imagine streamlining freelancer sourcing effortlessly with Orbity's automated project hunting and optimized bidding. Interested in simplifying your recruitment process? Let's connect! 🚀",
+    "subject": "Optimize Freelancer Sourcing with Orbity! Let's Connect 🚀"
   },
   {
     "id": 21,
     "key": "guest posting service",
     "designation": "guest posting service",
-    "content": "Hey [Name]! As a fellow content creator, I know the value of quality guest posts. With Orbity's guest posting service, you can effortlessly reach new audiences and boost your site's visibility. Ready to elevate your content strategy? Interested in collaborating?"
+    "content": "Hey [Name]! As a fellow content creator, I know the value of quality guest posts. With Orbity's guest posting service, you can effortlessly reach new audiences and boost your site's visibility. Ready to elevate your content strategy? Interested in collaborating?",
+    "subject": "Boost Your Visibility with Orbity's Guest Posting Service!"
   },
   {
     "id": 22,
     "key": "chief executive officer",
     "designation": "chief executive officer",
-    "content": "Hi [CEO's Name], as a CEO, imagine streamlining your company's freelance projects effortlessly with Orbity's automated tools. Boost productivity and project success! Interested in a demo? Let's chat! #ProjectManagement #FreelancerTool"
+    "content": "Hi [CEO's Name], as a CEO, imagine streamlining your company's freelance projects effortlessly with Orbity's automated tools. Boost productivity and project success! Interested in a demo? Let's chat! #ProjectManagement #FreelancerTool",
+    "subject": "Boost CEO Productivity with Orbity's Automation Tools!"
   },
   {
     "id": 23,
     "key": "freelancer at freelancer.com freelancer, computer science teacher , data entry operator, transcriber , graphics designer and computer operator",
     "designation": "freelancer at freelancer.com freelancer, computer science teacher , data entry operator, transcriber , graphics designer and computer operator",
-    "content": "Hey [Name]! As a freelancer at Freelancer.com, Orbity streamlines your project hunting and bidding process, saving you time to focus on your craft. Interested in boosting your productivity effortlessly? Let's connect! 🚀"
+    "content": "Hey [Name]! As a freelancer at Freelancer.com, Orbity streamlines your project hunting and bidding process, saving you time to focus on your craft. Interested in boosting your productivity effortlessly? Let's connect! 🚀",
+    "subject": "Boost Productivity with Orbity on Freelancer.com! 🚀"
   },
   {
     "id": 24,
     "key": "python",
     "designation": "python",
-    "content": "Hey there! As a Python developer, you'll love Orbity's AI-powered bid optimization feature to win more projects effortlessly. Interested in boosting your freelance game with Orbity? 🚀"
+    "content": "Hey [Name]! As a Python developer, you'll love Orbity's AI-powered bid optimization feature to win more projects effortlessly. Interested in boosting your freelance game with Orbity? 🚀",
+    "subject": "Boost Your Freelance Game with Orbity's AI!"
   },
   {
     "id": 25,
     "key": "graphic designer",
     "designation": "graphic designer",
-    "content": "Hey [Name]! As a fellow creative, you'll love Orbity's AI-powered project matching that saves time on hunting gigs. Interested in giving it a spin? 🚀"
+    "content": "Hey [Name]! As a fellow creative, you'll love Orbity's AI-powered project matching that saves time on hunting gigs. Interested in giving it a spin? 🚀",
+    "subject": "Boost Your Creative Career with Orbity's AI Matchmaking!"
   },
   {
     "id": 26,
     "key": "",
     "designation": "",
-    "content": "Hey [Name]! As a fellow project manager, I know the pain of juggling multiple tasks. With Orbity, you can automate project hunting and bidding, saving you hours. Interested in streamlining your workflow? Let's connect! 🚀 #ProjectManagement #Freelancers"
+    "content": "Hey [Name]! As a fellow project manager, I know the pain of juggling multiple tasks. With Orbity, you can automate project hunting and bidding, saving you hours. Interested in streamlining your workflow? Let's connect! 🚀 #ProjectManagement #Freelancers",
+    "subject": "Automate Project Hunting and Bidding with Orbity!"
   },
   {
     "id": 27,
     "key": "i am freelancer",
     "designation": "i am freelancer",
-    "content": "Hey [Name], as a freelancer, imagine automating your project hunting and bidding process to save hours and win more work effortlessly. Interested in boosting your productivity with Orbity? Let's connect! 🚀"
+    "content": "Hey [Name], as a freelancer, imagine automating your project hunting and bidding process to save hours and win more work effortlessly. Interested in boosting your productivity with Orbity? Let's connect! 🚀",
+    "subject": "Boost Productivity with Orbity: Win More Projects!"
   },
   {
     "id": 28,
     "key": "digital marketing",
     "designation": "digital marketing",
-    "content": "Hey [Name]! As a digital marketing pro, I thought you'd enjoy Orbity's AI-powered bidding for winning more projects effortlessly. Interested in checking out how Orbity can streamline your freelance workflow? Let's chat! 🚀"
+    "content": "Hey [Name]! As a digital marketing pro, I thought you'd enjoy Orbity's AI-powered bidding for winning more projects effortlessly. Interested in checking out how Orbity can streamline your freelance workflow? Let's chat! 🚀",
+    "subject": "Boost Your Freelance Success with Orbity's AI Bidding!"
   },
   {
     "id": 29,
     "key": "23k+ followers",
     "designation": "23k+ followers",
-    "content": "Hey [Name], as a project manager with your expertise, Orbity can streamline your freelancer management process, saving time and boosting efficiency. Interested in integrating Orbity into your workflow? Let's chat! 🚀 #freelancer #productivity"
+    "content": "Hey [Name], as a project manager with your expertise, Orbity can streamline your freelancer management process, saving time and boosting efficiency. Interested in integrating Orbity into your workflow? Let's chat! 🚀 #freelancer #productivity",
+    "subject": "Boost efficiency with Orbity! Let's streamline workflow! 🚀"
   },
   {
     "id": 30,
     "key": "freelancer and youtuber",
     "designation": "freelancer and youtuber",
-    "content": "Hey there! As a freelancer and YouTuber, imagine saving hours on project management with Orbity's automated tools. Boost your content creation and freelance gigs effortlessly! Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a freelancer and YouTuber, imagine saving hours on project management with Orbity's automated tools. Boost your content creation and freelance gigs effortlessly! Interested in trying it out? 🚀",
+    "subject": "Streamline Your Freelance Workflow with Orbity's Tools!"
   },
   {
     "id": 31,
     "key": "websites developer at arn solution",
     "designation": "websites developer at arn solution",
-    "content": "Hey [Name], as a website developer at ARN Solution, you can streamline project hunting with Orbity. Automate tasks and bid smarter to win more work effortlessly. Interested in boosting your productivity? Let's chat! 🚀"
+    "content": "Hey [Name], as a website developer at ARN Solution, you can streamline project hunting with Orbity. Automate tasks and bid smarter to win more work effortlessly. Interested in boosting your productivity? Let's chat! 🚀",
+    "subject": "Boost Productivity with Orbity for Web Developers!"
   },
   {
     "id": 32,
     "key": "freelancer at freelancer.com",
     "designation": "freelancer at freelancer.com",
-    "content": "Hey [Name]! As a fellow freelancer, I know the struggle of juggling multiple projects. With Orbity, automate project hunting, optimize bids, and take control of your freelance career effortlessly. Interested in boosting your productivity? Let's connect! 🚀 #FreelancerLife"
+    "content": "Hey [Name]! As a fellow freelancer, I know the struggle of juggling multiple projects. With Orbity, automate project hunting, optimize bids, and take control of your freelance career effortlessly. Interested in boosting your productivity? Let's connect! 🚀 #FreelancerLife",
+    "subject": "Boost Productivity and Take Control with Orbity! 🚀"
   },
   {
     "id": 33,
     "key": "clinical psychologist with expertise in psychology and content writer",
     "designation": "clinical psychologist with expertise in psychology and content writer",
-    "content": "Hi [Name], as a clinical psychologist and content writer, Orbity can streamline your freelance tasks, allowing you to focus more on your clients and writing. Interested in optimizing your workflows with Orbity? Let's connect! 🚀"
+    "content": "Hi [Name], as a clinical psychologist and content writer, Orbity can streamline your freelance tasks, allowing you to focus more on your clients and writing. Interested in optimizing your workflows with Orbity? Let's connect! 🚀",
+    "subject": "Optimize Your Workflows with Orbity! Let's Connect 🚀"
   },
   {
     "id": 34,
     "key": "guest posting and content writer",
     "designation": "guest posting and content writer",
-    "content": "Hi [Name]! Exciting news - I'm developing Orbity, a freelancer platform streamlining project management. With your guest posting skills, imagine effortlessly finding opportunities and optimizing bids. Interested in early access for a guest post on this innovative tool?"
+    "content": "Hi [Name]! Exciting news - I'm developing Orbity, a freelancer platform streamlining project management. With your guest posting skills, imagine effortlessly finding opportunities and optimizing bids. Interested in early access for a guest post on this innovative tool?",
+    "subject": "Boost Your Guest Posting with Orbity - Early Access!"
   },
   {
     "id": 35,
     "key": "hr professional",
     "designation": "hr professional",
-    "content": "Hey [Name]! As a HR pro, imagine streamlining freelancer recruitment with Orbity's automated project hunting & bid optimization. Interested in boosting your team's efficiency? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a HR pro, imagine streamlining freelancer recruitment with Orbity's automated project hunting & bid optimization. Interested in boosting your team's efficiency? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Boost HR Efficiency with Orbity's Freelancer Solution! 🚀"
   },
   {
     "id": 36,
     "key": "(video editor) i help content creators to elevate their content. short form video editor instagram reels, youtube shorts, tiktok videos , business promotional videos, video ad creater.",
     "designation": "(video editor) i help content creators to elevate their content. short form video editor instagram reels, youtube shorts, tiktok videos , business promotional videos, video ad creater.",
-    "content": "Hey [Name]! As a fellow content creator, I know the struggle of perfecting short-form videos. With Orbity, I've developed a platform that streamlines project hunting, bidding, and boosts productivity. Interested in simplifying your freelance workflows? Let's chat!"
+    "content": "Hey [Name]! As a fellow content creator, I know the struggle of perfecting short-form videos. With Orbity, I've developed a platform that streamlines project hunting, bidding, and boosts productivity. Interested in simplifying your freelance workflows? Let's chat!",
+    "subject": "Boost Your Freelance Workflow with Orbity!"
   },
   {
     "id": 37,
     "key": "experienced hr recruiter with a demonstrated history of working in the human resource, staffing, and recruiting industry.",
     "designation": "experienced hr recruiter with a demonstrated history of working in the human resource, staffing, and recruiting industry.",
-    "content": "Hey [Name]! As a seasoned HR recruiter, imagine streamlining your candidate sourcing process with Orbity's AI-powered project matching. Interested in optimizing your recruitment workflow? Let's connect! 🚀"
+    "content": "Hey [Name]! As a seasoned HR recruiter, imagine streamlining your candidate sourcing process with Orbity's AI-powered project matching. Interested in optimizing your recruitment workflow? Let's connect! 🚀",
+    "subject": "Optimize Recruitment Workflow with AI-Powered Matching! 🚀"
   },
   {
     "id": 38,
     "key": "(back link builder/saas websites)",
     "designation": "(back link builder/saas websites)",
-    "content": "Hey [Name]! 👋 As a back link builder for SaaS websites, imagine streamlining your project research and bid submissions effortlessly with Orbity. Interested in trying it out? Let's chat! 🚀 #ProjectManagement #FreelancerTools"
+    "content": "Hey [Name]! 👋 As a back link builder for SaaS websites, imagine streamlining your project research and bid submissions effortlessly with Orbity. Interested in trying it out? Let's chat! 🚀 #ProjectManagement #FreelancerTools",
+    "subject": "Boost Your Backlink Building with Orbity! 🚀"
   },
   {
     "id": 39,
     "key": "freelance designer at freelancer.com",
     "designation": "freelance designer at freelancer.com",
-    "content": "Hey [Name]! As a freelance designer at freelancer.com, imagine automating project hunting and optimizing bids effortlessly with Orbity. Boost your design game and win more work! Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a freelance designer at freelancer.com, imagine automating project hunting and optimizing bids effortlessly with Orbity. Boost your design game and win more work! Interested in trying it out? 🚀",
+    "subject": "Supercharge Your Design Career with Orbity! 🚀"
   },
   {
     "id": 40,
     "key": "seo executive at at gms digital lahore",
     "designation": "seo executive at at gms digital lahore",
-    "content": "Hey there! I'm developing Orbity, a freelancer platform that can streamline your project hunting process and boost your bidding efficiency. Imagine saving time on repetitive tasks! Interested in checking it out? 🚀"
+    "content": "Hey [Name]! I'm developing Orbity, a freelancer platform that can streamline your project hunting process and boost your bidding efficiency. Imagine saving time on repetitive tasks! Interested in checking it out? 🚀",
+    "subject": "Boost Your Bidding Efficiency with Orbity! 🚀"
   },
   {
     "id": 41,
     "key": "founder & ceo at su solz",
     "designation": "founder & ceo at su solz",
-    "content": "Hey there, as a founder & CEO at Su Solz, imagine streamlining your project management with Orbity! Automate tasks, optimize bids, and boost productivity effortlessly. Interested in early access? Let's chat! 🚀 #freelancer #productivity"
+    "content": "Hey [Name], as a founder & CEO at Su Solz, imagine streamlining your project management with Orbity! Automate tasks, optimize bids, and boost productivity effortlessly. Interested in early access? Let's chat! 🚀 #freelancer #productivity",
+    "subject": "Boost Productivity with Orbity: Early Access Available!"
   },
   {
     "id": 42,
     "key": "freelance aso expert",
     "designation": "freelance aso expert",
-    "content": "Hey [Name]! As a freelance ASO expert, you understand the importance of optimizing project visibility. With Orbity, automate project hunting and bidding, saving you time to focus on perfecting ASO strategies. Interested in exploring how Orbity can elevate your freelance game? Let's connect! 🚀"
+    "content": "Hey [Name]! As a freelance ASO expert, you understand the importance of optimizing project visibility. With Orbity, automate project hunting and bidding, saving you time to focus on perfecting ASO strategies. Interested in exploring how Orbity can elevate your freelance game? Let's connect! 🚀",
+    "subject": "Optimize Your ASO Freelance Game with Orbity!"
   },
   {
     "id": 43,
     "key": "data analyst",
     "designation": "data analyst",
-    "content": "Hey [Name], as a data analyst, imagine streamlining project analysis with Orbity's AI-powered bidding system. Boost your efficiency and win more work effortlessly. Interested in trying it out? 🚀 #freelancing #productivity"
+    "content": "Hey [Name], as a data analyst, imagine streamlining project analysis with Orbity's AI-powered bidding system. Boost your efficiency and win more work effortlessly. Interested in trying it out? 🚀 #freelancing #productivity",
+    "subject": "Supercharge Your Project Analysis with Orbity's AI!"
   },
   {
     "id": 44,
     "key": "business development",
     "designation": "business development",
-    "content": "Hey [Name], as a business development pro, imagine streamlining project acquisition with Orbity's intelligent automation! Boost your team's efficiency effortlessly. Interested in trying it out? 🚀"
+    "content": "Hey [Name], as a business development pro, imagine streamlining project acquisition with Orbity's intelligent automation! Boost your team's efficiency effortlessly. Interested in trying it out? 🚀",
+    "subject": "Boost Efficiency with Orbity's Intelligent Automation! 🚀"
   },
   {
     "id": 45,
     "key": "python✔",
     "designation": "python✔",
-    "content": "Hey Python enthusiast! As a project developer, you'll love Orbity's automation features to streamline your freelancing workflows. Interested in giving it a spin? 🚀 #ProductivityBoost #PythonPower"
+    "content": "Hey Python enthusiast! As a project developer, you'll love Orbity's automation features to streamline your freelancing workflows. Interested in giving it a spin? 🚀 #ProductivityBoost #PythonPower",
+    "subject": "Boost Your Python Projects with Orbity's Automation!"
   },
   {
     "id": 46,
     "key": "founder & ceo at diglotix",
     "designation": "founder & ceo at diglotix",
-    "content": null
+    "content": null,
+    "subject": "Unlock Your Potential with Expert Copywriting Services!"
   },
   {
     "id": 47,
     "key": "web",
     "designation": "web",
-    "content": "Hey [Name]! 👋 As a web designer, imagine automating project hunting & bid submissions with Orbity! Boost your productivity & win more work effortlessly. Interested in trying it out? 🚀 #ProjectDeveloper"
+    "content": "Hey [Name]! 👋 As a web designer, imagine automating project hunting & bid submissions with Orbity! Boost your productivity & win more work effortlessly. Interested in trying it out? 🚀 #ProjectDeveloper",
+    "subject": "Automate Project Hunting & Win More Work with Orbity!"
   },
   {
     "id": 48,
     "key": "python developer, data scientist, iot expert, machine learning expert and lecturer",
     "designation": "python developer, data scientist, iot expert, machine learning expert and lecturer",
-    "content": "👋 Hey [Name]! As a Python developer, imagine automating project hunting & bidding tasks effortlessly with Orbity. Boost your freelancer productivity! Interested in early access? Let's chat! 🚀"
+    "content": "👋 Hey [Name]! As a Python developer, imagine automating project hunting & bidding tasks effortlessly with Orbity. Boost your freelancer productivity! Interested in early access? Let's chat! 🚀",
+    "subject": "Boost Freelancer Productivity with Orbity! Early Access?"
   },
   {
     "id": 49,
     "key": "expert in jotform automation and adobe acrobat pdf fillable forms",
     "designation": "expert in jotform automation and adobe acrobat pdf fillable forms",
-    "content": "Hey [Name]! As a pro in jotform automation and Adobe Acrobat PDF fillable forms, you'll love Orbity's smart project automation feature. It streamlines your workflow, saving you time for more creative tasks. Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a pro in jotform automation and Adobe Acrobat PDF fillable forms, you'll love Orbity's smart project automation feature. It streamlines your workflow, saving you time for more creative tasks. Interested in trying it out? 🚀",
+    "subject": "Boost Your Workflow with Smart Automation Tools!"
   },
   {
     "id": 50,
     "key": "content writer at freelancer.com",
     "designation": "content writer at freelancer.com",
-    "content": "Hey! As a content writer on freelancer.com, imagine streamlining your project hunting & bidding with Orbity. Automate tasks to focus on writing quality content. Interested in simplifying your freelancing journey? Let's chat! #ProductivityBoost 🚀"
+    "content": "Hey! As a content writer on freelancer.com, imagine streamlining your project hunting & bidding with Orbity. Automate tasks to focus on writing quality content. Interested in simplifying your freelancing journey? Let's chat! #ProductivityBoost 🚀",
+    "subject": "Boost Your Freelancing Success with Orbity! 🚀"
   },
   {
     "id": 51,
     "key": "information technology specialist at freelancer.com",
     "designation": "information technology specialist at freelancer.com",
-    "content": "Hey [Name]! As a tech specialist at freelancer.com, you'll love Orbity! It automates project hunting and optimizes bids, saving you time and boosting your success rate. Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a tech specialist at freelancer.com, you'll love Orbity! It automates project hunting and optimizes bids, saving you time and boosting your success rate. Interested in trying it out? 🚀",
+    "subject": "Boost Your Success with Orbity - Try Now!"
   },
   {
     "id": 52,
     "key": "html",
     "designation": "html",
-    "content": "Hey [Name]! As a fellow developer, I know the struggle of juggling multiple projects. With Orbity, you can automate project hunting and bidding tasks, allowing you to focus on coding. Interested in giving it a try? 🚀"
+    "content": "Hey [Name]! As a fellow developer, I know the struggle of juggling multiple projects. With Orbity, you can automate project hunting and bidding tasks, allowing you to focus on coding. Interested in giving it a try? 🚀",
+    "subject": "Automate project hunting with Orbity! 🌟"
   },
   {
     "id": 53,
     "key": "businesses consultant & lead generation specialist and also data entry expert work at freelancer",
     "designation": "businesses consultant & lead generation specialist and also data entry expert work at freelancer",
-    "content": "Hey [Name]! As a lead generation specialist and data entry expert, Orbity streamlines project hunting and bidding, saving you time to focus on strategy. Interested in trying it out? #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a lead generation specialist and data entry expert, Orbity streamlines project hunting and bidding, saving you time to focus on strategy. Interested in trying it out? #FreelancerMadeEasy",
+    "subject": "Boost Your Freelance Success with Orbity Today!"
   },
   {
     "id": 54,
     "key": "director @ agri home chemicals",
     "designation": "director @ agri home chemicals",
-    "content": "Hi [Director's Name]! With Orbity, streamline your team's project management effortlessly, giving you more time to focus on innovation at Agri Home Chemicals. Ready to revolutionize your workflow? Interested in early access? 🚀"
+    "content": "Hi [Director's Name]! With Orbity, streamline your team's project management effortlessly, giving you more time to focus on innovation at Agri Home Chemicals. Ready to revolutionize your workflow? Interested in early access? 🚀",
+    "subject": "Revolutionize Your Workflow with Orbity 🚀"
   },
   {
     "id": 55,
     "key": "image videos and writing at freelancer.com",
     "designation": "image videos and writing at freelancer.com",
-    "content": "Hey there! As a content creator on freelancer.com, I thought you might find Orbity helpful for automating project hunting and bid optimization. Interested in simplifying your freelancing workflows? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a content creator on freelancer.com, I thought you might find Orbity helpful for automating project hunting and bid optimization. Interested in simplifying your freelancing workflows? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Optimize Freelance Bids with Orbity 🚀 #EfficiencyBoost"
   },
   {
     "id": 56,
     "key": "ceo of lead studio pvt ltd",
     "designation": "ceo of lead studio pvt ltd",
-    "content": "Hey [CEO's Name], as a CEO at Lead Studio Pvt Ltd, imagine streamlining your freelance projects effortlessly with Orbity! Boost productivity and empower your team to win more work seamlessly. Interested in seeing how Orbity can transform your freelancing experience? Let's connect! 🚀"
+    "content": "Hey [CEO's Name], as a CEO at Lead Studio Pvt Ltd, imagine streamlining your freelance projects effortlessly with Orbity! Boost productivity and empower your team to win more work seamlessly. Interested in seeing how Orbity can transform your freelancing experience? Let's connect! 🚀",
+    "subject": "Transform Freelancing with Orbity - Let's Connect! 🚀"
   },
   {
     "id": 57,
     "key": "sr. business developer",
     "designation": "sr. business developer",
-    "content": "Hi [Name], as a Sr. Business Developer, imagine effortlessly identifying profitable freelance opportunities with Orbity's AI-powered bidding system. Interested in optimizing your workflow? Let's chat! 🚀 #ProductivityBoosters"
+    "content": "Hi [Name], as a Sr. Business Developer, imagine effortlessly identifying profitable freelance opportunities with Orbity's AI-powered bidding system. Interested in optimizing your workflow? Let's chat! 🚀 #ProductivityBoosters",
+    "subject": "Boost Your Freelance Profits with AI Bidding System!"
   },
   {
     "id": 58,
     "key": "b2b lead generation & email outreach",
     "designation": "b2b lead generation & email outreach",
-    "content": "Hi [Name]! As a b2b lead gen pro, imagine streamlining email outreach with Orbity. Automate project hunting, bid submission, and more in one place. Interested in boosting your productivity? Let's chat! 🚀"
+    "content": "Hi [Name]! As a b2b lead gen pro, imagine streamlining email outreach with Orbity. Automate project hunting, bid submission, and more in one place. Interested in boosting your productivity? Let's chat! 🚀",
+    "subject": "Boost Productivity with Orbity: Let's Chat! 🚀"
   },
   {
     "id": 59,
     "key": "i am a professional content writer. transforming ideas into captivating stories.",
     "designation": "i am a professional content writer. transforming ideas into captivating stories.",
-    "content": "Hey there! 👋 As a professional content writer, imagine transforming your ideas into captivating stories effortlessly with Orbity's project management features. Interested in streamlining your freelancing process? Let's connect! 🚀"
+    "content": "Hey [Name]! 👋 As a professional content writer, imagine transforming your ideas into captivating stories effortlessly with Orbity's project management features. Interested in streamlining your freelancing process? Let's connect! 🚀",
+    "subject": "Boost Your Freelancing Workflow with Orbity! 🚀"
   },
   {
     "id": 60,
     "key": "dynamic web developer",
     "designation": "dynamic web developer",
-    "content": "Hey [Name]! As a dynamic web developer, imagine streamlining project hunting and bidding with Orbity. It automates repetitive tasks intelligently, freeing you to focus on coding brilliance. Ready to boost your freelance game? Let's chat! Interested in early access? 🚀"
+    "content": "Hey [Name]! As a dynamic web developer, imagine streamlining project hunting and bidding with Orbity. It automates repetitive tasks intelligently, freeing you to focus on coding brilliance. Ready to boost your freelance game? Let's chat! Interested in early access? 🚀",
+    "subject": "Boost Your Freelance Game with Orbity 🚀"
   },
   {
     "id": 61,
     "key": "website developer",
     "designation": "website developer",
-    "content": "Hey [Name]! As a website developer, Orbity streamlines project hunting, bids, and management in one place. Boost your efficiency and productivity effortlessly. Interested in optimizing your freelancing game with Orbity? Let's connect!"
+    "content": "Hey [Name]! As a website developer, Orbity streamlines project hunting, bids, and management in one place. Boost your efficiency and productivity effortlessly. Interested in optimizing your freelancing game with Orbity? Let's connect!",
+    "subject": "Optimize Freelancing Efficiency with Orbity! Let's Connect!"
   },
   {
     "id": 62,
     "key": "social media manager",
     "designation": "social media manager",
-    "content": "Hey [Name]! As a social media manager, imagine streamlining project hunting and bid submissions effortlessly with Orbity. Boost your productivity and win more projects. Interested in trying it out? Let's connect! 🚀 #freelancer #productivity"
+    "content": "Hey [Name]! As a social media manager, imagine streamlining project hunting and bid submissions effortlessly with Orbity. Boost your productivity and win more projects. Interested in trying it out? Let's connect! 🚀 #freelancer #productivity",
+    "subject": "Boost Productivity and Win More Projects with Orbity!"
   },
   {
     "id": 63,
     "key": "assistant manager, systems (linux) at digital realty (ibex)",
     "designation": "assistant manager, systems (linux) at digital realty (ibex)",
-    "content": "Hey [Name], as an assistant manager, systems (Linux) at Digital Realty (IBEX), you juggle multiple tasks daily. Imagine automating routine Linux admin tasks seamlessly with Orbity. Interested in simplifying your workload? Let's chat! 🚀"
+    "content": "Hey [Name], as an assistant manager, systems (Linux) at Digital Realty (IBEX), you juggle multiple tasks daily. Imagine automating routine Linux admin tasks seamlessly with Orbity. Interested in simplifying your workload? Let's chat! 🚀",
+    "subject": "Streamline Linux admin tasks with Orbity! 🚀"
   },
   {
     "id": 64,
     "key": "off-page seo",
     "designation": "off-page seo",
-    "content": "Hey there! As a fellow project developer, I know the importance of Off-Page SEO in boosting online visibility and driving organic traffic. With Orbity's smart automation features, you can streamline your SEO efforts and focus on strategic optimization. Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a fellow project developer, I know the importance of Off-Page SEO in boosting online visibility and driving organic traffic. With Orbity's smart automation features, you can streamline your SEO efforts and focus on strategic optimization. Interested in trying it out? 🚀",
+    "subject": "Boost SEO with Orbity's Smart Automation Tools! 🚀"
   },
   {
     "id": 65,
     "key": "freelacing at freelancer.com",
     "designation": "freelacing at freelancer.com",
-    "content": "Hey there! As a freelancer at Freelancer.com, you know the hustle. Ever tried Orbity? It automates project hunting, boosts bid optimization, and centralizes control. Interested in simplifying your freelance life? Let's chat! 🚀 #FreelanceLife #ProductivityBoost"
+    "content": "Hey [Name]! As a freelancer at Freelancer.com, you know the hustle. Ever tried Orbity? It automates project hunting, boosts bid optimization, and centralizes control. Interested in simplifying your freelance life? Let's chat! 🚀 #FreelanceLife #ProductivityBoost",
+    "subject": "Boost Your Freelance Game with Orbity! 🚀"
   },
   {
     "id": 66,
     "key": "founder & ceo of schoolseek",
     "designation": "founder & ceo of schoolseek",
-    "content": "Hey [Founder's Name]! As a fellow creator in the ed-tech space, I admire your dedication to revolutionizing education with SchoolSeek. Orbity can streamline your project management, saving you time to focus on scaling SchoolSeek. Interested in a demo? 🚀"
+    "content": "Hey [Founder's Name]! As a fellow creator in the ed-tech space, I admire your dedication to revolutionizing education with SchoolSeek. Orbity can streamline your project management, saving you time to focus on scaling SchoolSeek. Interested in a demo? 🚀",
+    "subject": "Revolutionize Education with Orbity: Streamline Your Project!"
   },
   {
     "id": 67,
     "key": "ex.intern @gomal theme",
     "designation": "ex.intern @gomal theme",
-    "content": "Hey [Name], as an ex-intern at @gomal, I know how important efficiency is in project management. With Orbity, you can automate tasks, analyze opportunities faster, and win more work effortlessly. Interested in exploring how Orbity can streamline your workflow? Let's chat! 🚀"
+    "content": "Hey [Name], as an ex-intern at @gomal, I know how important efficiency is in project management. With Orbity, you can automate tasks, analyze opportunities faster, and win more work effortlessly. Interested in exploring how Orbity can streamline your workflow? Let's chat! 🚀",
+    "subject": "Boost Project Efficiency with Orbity: Let's Chat!"
   },
   {
     "id": 68,
     "key": "head of human resources",
     "designation": "head of human resources",
-    "content": "Hey [Name], as a head of human resources, imagine streamlining freelance recruitment effortlessly with Orbity! Automate project vetting and bidding to save time. Interested in boosting your team's freelance hiring efficiency? Let's connect! 🚀"
+    "content": "Hey [Name], as a head of human resources, imagine streamlining freelance recruitment effortlessly with Orbity! Automate project vetting and bidding to save time. Interested in boosting your team's freelance hiring efficiency? Let's connect! 🚀",
+    "subject": "Boost Freelance Hiring Efficiency with Orbity! 🚀"
   },
   {
     "id": 69,
     "key": "valeologist always looking for valeologist",
     "designation": "valeologist always looking for valeologist",
-    "content": "Hey [Name], as a passionate valeologist, I thought you'd appreciate Orbity - a platform that automates project hunting, bids, and boosts freelance productivity. Interested in giving it a try? 🚀"
+    "content": "Hey [Name], as a passionate valeologist, I thought you'd appreciate Orbity - a platform that automates project hunting, bids, and boosts freelance productivity. Interested in giving it a try? 🚀",
+    "subject": "Boost Freelance Productivity with Orbity! 🚀"
   },
   {
     "id": 70,
     "key": "social media manager at fiverr",
     "designation": "social media manager at fiverr",
-    "content": "Hey [Name]! As a social media manager at Fiverr, imagine streamlining your project hunting and bidding processes effortlessly with Orbity. Boost your productivity and win more work automatically. Intrigued? Interested in early access? Let's chat!"
+    "content": "Hey [Name]! As a social media manager at Fiverr, imagine streamlining your project hunting and bidding processes effortlessly with Orbity. Boost your productivity and win more work automatically. Intrigued? Interested in early access? Let's chat!",
+    "subject": "Boost Productivity & Win More Work with Orbity!"
   },
   {
     "id": 71,
     "key": "seo specialist",
     "designation": "seo specialist",
-    "content": "Hey [Name]! As a SEO specialist, imagine automating project hunting & bid optimization with Orbity. Boost productivity & win more work effortlessly. Interested in a demo? Let's chat! 🚀 #FreelancerTool"
+    "content": "Hey [Name]! As a SEO specialist, imagine automating project hunting & bid optimization with Orbity. Boost productivity & win more work effortlessly. Interested in a demo? Let's chat! 🚀 #FreelancerTool",
+    "subject": "Boost Your Freelance SEO Success with Orbity! 🚀"
   },
   {
     "id": 72,
     "key": "virtual assistant and consultant amazon private label and fba wholesale",
     "designation": "virtual assistant and consultant amazon private label and fba wholesale",
-    "content": "Hey there! As a virtual assistant & consultant in Amazon private label and FBA wholesale, imagine streamlining your project hunting & bidding tasks with Orbity, saving hours and winning more work effortlessly. Interested in optimizing your freelance workflows? 🚀"
+    "content": "Hey [Name]! As a virtual assistant & consultant in Amazon private label and FBA wholesale, imagine streamlining your project hunting & bidding tasks with Orbity, saving hours and winning more work effortlessly. Interested in optimizing your freelance workflows? 🚀",
+    "subject": "Optimize Freelance Workflows with Orbity! 🚀"
   },
   {
     "id": 73,
     "key": "expert in seo, smm, content writing, and digital marketing, ranked in the top 3% among 75 million users on freelancer with 5-star rating, specializing in achieving google #1 rankings, boosting brand visibility.",
     "designation": "expert in seo, smm, content writing, and digital marketing, ranked in the top 3% among 75 million users on freelancer with 5-star rating, specializing in achieving google #1 rankings, boosting brand visibility.",
-    "content": "Hey [Name], I'm the mind behind Orbity, a game-changer for freelancers. Imagine automating project hunting & bids to focus on strategy. With your SEO & SMM expertise, Orbity could amplify your impact. Interested in early access?"
+    "content": "Hey [Name], I'm the mind behind Orbity, a game-changer for freelancers. Imagine automating project hunting & bids to focus on strategy. With your SEO & SMM expertise, Orbity could amplify your impact. Interested in early access?",
+    "subject": "Boost Your Freelance Impact with Orbity - Early Access!"
   },
   {
     "id": 74,
     "key": "certified graphic designer",
     "designation": "certified graphic designer",
-    "content": "Hey [Name]! As a certified graphic designer, imagine streamlining your project search and bid submissions with Orbity's intelligent automation. Boost your productivity and win more work effortlessly. Interested in early access? Let's connect!"
+    "content": "Hey [Name]! As a certified graphic designer, imagine streamlining your project search and bid submissions with Orbity's intelligent automation. Boost your productivity and win more work effortlessly. Interested in early access? Let's connect!",
+    "subject": "Boost Productivity with Orbity's Automation - Early Access!"
   },
   {
     "id": 75,
     "key": "entrepreneur + vedio production + crypto exchanger",
     "designation": "entrepreneur + vedio production + crypto exchanger",
-    "content": "Hey there! As a video production entrepreneur diving into the world of crypto exchanges, Orbity can streamline your freelancing tasks and boost project efficiency. Interested in giving Orbity a try for your projects? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a video production entrepreneur diving into the world of crypto exchanges, Orbity can streamline your freelancing tasks and boost project efficiency. Interested in giving Orbity a try for your projects? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Boost Project Efficiency with Orbity! Let's Chat 🚀"
   },
   {
     "id": 76,
     "key": "freelance shopify & amazon specialist",
     "designation": "freelance shopify & amazon specialist",
-    "content": "Hey [Name]! As a Shopify & Amazon specialist, imagine streamlining project hunting and bidding tasks effortlessly with Orbity. Boost your freelance productivity and win more work! Interested in trying it out? 🚀"
+    "content": "Hey [Name]! As a Shopify & Amazon specialist, imagine streamlining project hunting and bidding tasks effortlessly with Orbity. Boost your freelance productivity and win more work! Interested in trying it out? 🚀",
+    "subject": "Boost Freelance Productivity with Orbity! Try Now 🚀"
   },
   {
     "id": 77,
     "key": "ceo at maqbool solutions, talagang",
     "designation": "ceo at maqbool solutions, talagang",
-    "content": "Hey there! As a CEO at Maqbool Solutions, you know the importance of streamlining processes. With Orbity, you can automate project management, saving time and boosting efficiency. Interested in optimizing your team's workflow? Let's chat! 🚀"
+    "content": "Hey [Name]! As a CEO at Maqbool Solutions, you know the importance of streamlining processes. With Orbity, you can automate project management, saving time and boosting efficiency. Interested in optimizing your team's workflow? Let's chat! 🚀",
+    "subject": "Boost Efficiency with Orbity: Let's Chat! 🚀"
   },
   {
     "id": 78,
     "key": "experienced content writer",
     "designation": "experienced content writer",
-    "content": "Hey [Name]! 👋 As a seasoned content writer, imagine spending more time crafting compelling stories and less time on project hunting. With Orbity, automate your bid submissions intelligently and win more work effortlessly. Interested in boosting your writing productivity? Let's chat! 🚀"
+    "content": "Hey [Name]! 👋 As a seasoned content writer, imagine spending more time crafting compelling stories and less time on project hunting. With Orbity, automate your bid submissions intelligently and win more work effortlessly. Interested in boosting your writing productivity? Let's chat! 🚀",
+    "subject": "Boost Your Writing Productivity with Orbity! 📝✨"
   },
   {
     "id": 79,
     "key": "ceo & co-founder of lusiontech",
     "designation": "ceo & co-founder of lusiontech",
-    "content": "Hi [Name], as a CEO & Co-founder at LusionTech, you'll love how Orbity streamlines freelance workflows, enhancing your team's efficiency and project success. Excited to chat more? Interested in early access? 🚀"
+    "content": "Hi [Name], as a CEO & Co-founder at LusionTech, you'll love how Orbity streamlines freelance workflows, enhancing your team's efficiency and project success. Excited to chat more? Interested in early access? 🚀",
+    "subject": "Transform Your Freelance Workflows with Orbity! 🚀"
   },
   {
     "id": 80,
     "key": "job recruiter at randstad usa",
     "designation": "job recruiter at randstad usa",
-    "content": "Hey there! As a job recruiter at Randstad USA, Orbity can streamline your candidate sourcing process with intelligent automation, saving you time and effort. Interested in boosting your recruitment efficiency? Let's chat! 🚀"
+    "content": "Hey [Name]! As a job recruiter at Randstad USA, Orbity can streamline your candidate sourcing process with intelligent automation, saving you time and effort. Interested in boosting your recruitment efficiency? Let's chat! 🚀",
+    "subject": "Boost Recruitment Efficiency with Orbity's Automation Tool!"
   },
   {
     "id": 81,
     "key": "seo expert",
     "designation": "seo expert",
-    "content": "Hey [Name], as a SEO expert, imagine streamlining project hunting and bidding with Orbity’s AI-powered automation. Boost your efficiency and win more work effortlessly. Interested in exploring how Orbity can optimize your workflow? Let's connect! 🚀"
+    "content": "Hey [Name], as a SEO expert, imagine streamlining project hunting and bidding with Orbity’s AI-powered automation. Boost your efficiency and win more work effortlessly. Interested in exploring how Orbity can optimize your workflow? Let's connect! 🚀",
+    "subject": "Optimize Your Workflow with Orbity's AI Automation!"
   },
   {
     "id": 82,
     "key": "social media marketer",
     "designation": "social media marketer",
-    "content": "Hey [Name]! As a social media marketer, imagine streamlining project hunting and automated bidding with Orbity. Boost your productivity and win more clients effortlessly. Interested in early access? Let's chat! 🚀"
+    "content": "Hey [Name]! As a social media marketer, imagine streamlining project hunting and automated bidding with Orbity. Boost your productivity and win more clients effortlessly. Interested in early access? Let's chat! 🚀",
+    "subject": "Boost Your Productivity with Orbity - Early Access!"
   },
   {
     "id": 83,
     "key": "cheif executive officer",
     "designation": "cheif executive officer",
-    "content": "Hey [CEO's Name], as a CEO, imagine streamlining your freelancer management effortlessly with Orbity. Automate tasks, enhance productivity, and gain unified control. Interested in optimizing your freelancing power? Let's chat! 🚀"
+    "content": "Hey [CEO's Name], as a CEO, imagine streamlining your freelancer management effortlessly with Orbity. Automate tasks, enhance productivity, and gain unified control. Interested in optimizing your freelancing power? Let's chat! 🚀",
+    "subject": "Optimize Freelancer Management with Orbity: Let's Chat!"
   },
   {
     "id": 84,
     "key": "ai & machine learning engineer",
     "designation": "ai & machine learning engineer",
-    "content": "Hey [Name]! As an AI & Machine Learning engineer, Orbity can help you automate project hunting tasks and submit optimized bids effortlessly. Interested in boosting your freelancing power with Orbity? Let's chat! 🚀"
+    "content": "Hey [Name]! As an AI & Machine Learning engineer, Orbity can help you automate project hunting tasks and submit optimized bids effortlessly. Interested in boosting your freelancing power with Orbity? Let's chat! 🚀",
+    "subject": "Boost Your Freelancing Power with Orbity! 🚀"
   },
   {
     "id": 85,
     "key": "chief executive officer at soastech",
     "designation": "chief executive officer at soastech",
-    "content": "Hey [CEO's Name]! As a fellow tech enthusiast, I developed Orbity to streamline freelancers' workflows. Imagine automating project hunting and bid optimization effortlessly. Interested in a demo? Let's chat! 🚀 #TechInnovations"
+    "content": "Hey [CEO's Name]! As a fellow tech enthusiast, I developed Orbity to streamline freelancers' workflows. Imagine automating project hunting and bid optimization effortlessly. Interested in a demo? Let's chat! 🚀 #TechInnovations",
+    "subject": "Optimize Freelancer Workflow with Orbity Demo 🚀"
   },
   {
     "id": 86,
     "key": "recruitment specialist",
     "designation": "recruitment specialist",
-    "content": "Hey [Name], as a recruitment specialist, imagine streamlining your freelance hiring process effortlessly with Orbity. Automate candidate sourcing, screening, and onboarding tasks seamlessly. Interested in early access? Let's chat!"
+    "content": "Hey [Name], as a recruitment specialist, imagine streamlining your freelance hiring process effortlessly with Orbity. Automate candidate sourcing, screening, and onboarding tasks seamlessly. Interested in early access? Let's chat!",
+    "subject": "Automate Freelance Hiring with Orbity: Early Access Available!"
   },
   {
     "id": 87,
     "key": "graphic designer at freelancer.com",
     "designation": "graphic designer at freelancer.com",
-    "content": "Hey [Name]! As a graphic designer on freelancer.com, imagine streamlining project discovery and bid submissions with Orbity. Spend more time designing and less time searching. Interested in boosting your efficiency? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a graphic designer on freelancer.com, imagine streamlining project discovery and bid submissions with Orbity. Spend more time designing and less time searching. Interested in boosting your efficiency? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Boost Efficiency: Orbity for Freelancers! Let's Chat 🚀"
   },
   {
     "id": 88,
     "key": "email marketing expert",
     "designation": "email marketing expert",
-    "content": "Hey [Name], as a savvy email marketing expert, imagine streamlining your freelancing process with Orbity. Automate project hunting & bid smarter. Interested in trying it out? 🚀 #FreelancerLife"
+    "content": "Hey [Name], as a savvy email marketing expert, imagine streamlining your freelancing process with Orbity. Automate project hunting & bid smarter. Interested in trying it out? 🚀 #FreelancerLife",
+    "subject": "Boost Your Freelancing Success with Orbity! 🚀"
   },
   {
     "id": 89,
     "key": "customer sales representative(csr) content writing web development",
     "designation": "customer sales representative(csr) content writing web development",
-    "content": "Hi [Name], as a CSR in content writing and web development, imagine streamlining project assignments effortlessly. With Orbity, you can save time by automating repetitive tasks and focus on delivering quality content. Intrigued? Let's connect! Interested in exploring more?"
+    "content": "Hi [Name], as a CSR in content writing and web development, imagine streamlining project assignments effortlessly. With Orbity, you can save time by automating repetitive tasks and focus on delivering quality content. Intrigued? Let's connect! Interested in exploring more?",
+    "subject": "Optimize Your Workflow with Orbity - Let's Connect!"
   },
   {
     "id": 90,
     "key": "founder & ceo of jerry outlet cyber security",
     "designation": "founder & ceo of jerry outlet cyber security",
-    "content": "Hi [Founder & CEO],\n\nAs a developer of Orbity, I understand the vital role cybersecurity plays in protecting businesses. Our platform streamlines freelancing workflows, ensuring your team's data is secure while boosting productivity. Want to explore how Orbity can benefit your team? Let's chat!\n\nCheers, [Your Name]"
+    "content": "Hi [Founder & CEO],\n\nAs a developer of Orbity, I understand the vital role cybersecurity plays in protecting businesses. Our platform streamlines freelancing workflows, ensuring your team's data is secure while boosting productivity. Want to explore how Orbity can benefit your team? Let's chat!\n\nCheers, [Your Name]",
+    "subject": "Boost Productivity with Secure Freelancing Workflows - Let's Chat!"
   },
   {
     "id": 91,
     "key": "\"professional guest posting specialist",
     "designation": "\"professional guest posting specialist",
-    "content": "Hey there! As a professional guest posting specialist, imagine streamlining your outreach efforts with Orbity's AI-powered bid optimization for winning more work effortlessly. Interested in exploring how Orbity can revolutionize your freelancing game? Let's connect! 🚀"
+    "content": "Hey [Name]! As a professional guest posting specialist, imagine streamlining your outreach efforts with Orbity's AI-powered bid optimization for winning more work effortlessly. Interested in exploring how Orbity can revolutionize your freelancing game? Let's connect! 🚀",
+    "subject": "Revolutionize Your Freelancing Game with Orbity's AI!"
   },
   {
     "id": 92,
     "key": "social media marketing specialist at linkedin",
     "designation": "social media marketing specialist at linkedin",
-    "content": "Hey there! As a social media marketing specialist, you'll love Orbity's AI-powered bidding feature to win more projects effortlessly. Interested in boosting your freelance game with Orbity? Let's chat! 🚀 #FreelanceMadeEasy"
+    "content": "Hey [Name]! As a social media marketing specialist, you'll love Orbity's AI-powered bidding feature to win more projects effortlessly. Interested in boosting your freelance game with Orbity? Let's chat! 🚀 #FreelanceMadeEasy",
+    "subject": "Boost Your Freelance Game with Orbity's AI Bidding!"
   },
   {
     "id": 93,
     "key": "chief executive officer at sysfortech.com",
     "designation": "chief executive officer at sysfortech.com",
-    "content": "Hi [CEO's Name]! As a CEO at sysfortech.com, imagine streamlining project management effortlessly with Orbity. Boost productivity, automate tasks, and enhance freelance capabilities. Ready to simplify your freelancing workflows? Interested in trying Orbity out?"
+    "content": "Hi [CEO's Name]! As a CEO at sysfortech.com, imagine streamlining project management effortlessly with Orbity. Boost productivity, automate tasks, and enhance freelance capabilities. Ready to simplify your freelancing workflows? Interested in trying Orbity out?",
+    "subject": "Upgrade Your Project Management with Orbity Today!"
   },
   {
     "id": 94,
     "key": "co-founder & ceo at ischool",
     "designation": "co-founder & ceo at ischool",
-    "content": "Hey [Name], as a Co-Founder & CEO at iSchool, imagine streamlining project management effortlessly with Orbity! Boost team productivity & project success. Interested in a demo? Let's chat!"
+    "content": "Hey [Name], as a Co-Founder & CEO at iSchool, imagine streamlining project management effortlessly with Orbity! Boost team productivity & project success. Interested in a demo? Let's chat!",
+    "subject": "Boost Project Success with Orbity Demo!"
   },
   {
     "id": 95,
     "key": "microsoft certified data scientist",
     "designation": "microsoft certified data scientist",
-    "content": "Hey [Name], as a Microsoft Certified Data Scientist, imagine streamlining your project workflows with Orbity! Automate project hunting and bidding with AI optimization. Interested in early access? Let's chat!"
+    "content": "Hey [Name], as a Microsoft Certified Data Scientist, imagine streamlining your project workflows with Orbity! Automate project hunting and bidding with AI optimization. Interested in early access? Let's chat!",
+    "subject": "Optimize Project Workflows with Orbity - Early Access!"
   },
   {
     "id": 96,
     "key": "it project & product manager",
     "designation": "it project & product manager",
-    "content": "Hey there! As a skilled IT project & product manager, imagine streamlining project hunting and bidding tasks effortlessly with Orbity. Boost your team's productivity and win more work efficiently. Interested in simplifying your freelancing workflows? Let's chat! 🚀"
+    "content": "Hey [Name]! As a skilled IT project & product manager, imagine streamlining project hunting and bidding tasks effortlessly with Orbity. Boost your team's productivity and win more work efficiently. Interested in simplifying your freelancing workflows? Let's chat! 🚀",
+    "subject": "Boost Your Freelancing Efficiency with Orbity! 🚀"
   },
   {
     "id": 97,
     "key": "hr & admin",
     "designation": "hr & admin",
-    "content": "Hey [Name], as a HR & Admin pro, imagine streamlining freelancer management with Orbity! Automate project tracking & team coordination effortlessly. Interested in optimizing your freelance workflows? Let's chat! 🚀 #ProjectManagement #Freelancing"
+    "content": "Hey [Name], as a HR & Admin pro, imagine streamlining freelancer management with Orbity! Automate project tracking & team coordination effortlessly. Interested in optimizing your freelance workflows? Let's chat! 🚀 #ProjectManagement #Freelancing",
+    "subject": "Optimize Freelance Workflows with Orbity! Let's Chat 🚀"
   },
   {
     "id": 98,
     "key": "shopify developer",
     "designation": "shopify developer",
-    "content": "Hey [Name]! As a Shopify developer, imagine streamlining project management with Orbity's automated tasks for more efficient workflows. Interested in exploring how Orbity can enhance your Shopify projects? Let's connect! 🚀 #projectmanagement #freelancing"
+    "content": "Hey [Name]! As a Shopify developer, imagine streamlining project management with Orbity's automated tasks for more efficient workflows. Interested in exploring how Orbity can enhance your Shopify projects? Let's connect! 🚀 #projectmanagement #freelancing",
+    "subject": "Boost Shopify Projects with Orbity's Automation! Let's Connect!"
   },
   {
     "id": 99,
     "key": "partner @ baker tilly",
     "designation": "partner @ baker tilly",
-    "content": "Hey [Partner at Baker Tilly]! As a project developer, I know the importance of streamlining processes. Orbity can help your team automate project tasks and boost efficiency. Interested in exploring how Orbity can benefit your role? Let's connect! 🚀"
+    "content": "Hey [Partner at Baker Tilly]! As a project developer, I know the importance of streamlining processes. Orbity can help your team automate project tasks and boost efficiency. Interested in exploring how Orbity can benefit your role? Let's connect! 🚀",
+    "subject": "Boost Efficiency with Orbity: Let's Connect!"
   },
   {
     "id": 100,
     "key": "rf & microwave modules",
     "designation": "rf & microwave modules",
-    "content": "Hey there! As a RF & microwave modules expert, imagine streamlining project management with Orbity's automated tasks, optimized bids, and unified dashboard. Interested in exploring how Orbity can revolutionize your freelancing game? Let's connect! 🚀"
+    "content": "Hey [Name]! As a RF & microwave modules expert, imagine streamlining project management with Orbity's automated tasks, optimized bids, and unified dashboard. Interested in exploring how Orbity can revolutionize your freelancing game? Let's connect! 🚀",
+    "subject": "Revolutionize Your Freelancing Game with Orbity!"
   },
   {
     "id": 101,
     "key": "we are currently hiring at freelancer.com",
     "designation": "we are currently hiring at freelancer.com",
-    "content": "Hey [Name], as a project developer, I thought you'd appreciate how Orbity streamlines the freelancer.com experience, helping you automate tasks and win more projects effortlessly. Interested in early access to boost your freelancing power? Let's chat! 🚀"
+    "content": "Hey [Name], as a project developer, I thought you'd appreciate how Orbity streamlines the freelancer.com experience, helping you automate tasks and win more projects effortlessly. Interested in early access to boost your freelancing power? Let's chat! 🚀",
+    "subject": "Boost Your Freelancing Power with Orbity! 🚀"
   },
   {
     "id": 102,
     "key": "managing director al haq travel & tours",
     "designation": "managing director al haq travel & tours",
-    "content": "Hey there! As a managing director at Al Haq Travel & Tours, imagine streamlining your project management with Orbity. Automate tasks, analyze opportunities, and win more bids effortlessly. Interested in boosting your team's productivity? Let's chat! 🚀"
+    "content": "Hey [Name]! As a managing director at Al Haq Travel & Tours, imagine streamlining your project management with Orbity. Automate tasks, analyze opportunities, and win more bids effortlessly. Interested in boosting your team's productivity? Let's chat! 🚀",
+    "subject": "Boost Team Productivity with Orbity! Let's Chat 🚀"
   },
   {
     "id": 103,
     "key": "building web & odoo solutions",
     "designation": "building web & odoo solutions",
-    "content": "Hey [Name], as a web and Odoo solutions expert, you'll love how Orbity streamlines freelancing tasks to save you time and boost productivity. Interested in exploring how Orbity can elevate your workflow? Let's chat! 🚀"
+    "content": "Hey [Name], as a web and Odoo solutions expert, you'll love how Orbity streamlines freelancing tasks to save you time and boost productivity. Interested in exploring how Orbity can elevate your workflow? Let's chat! 🚀",
+    "subject": "Boost Productivity with Orbity: Let's Chat! 🚀"
   },
   {
     "id": 104,
     "key": "full stack developer",
     "designation": "full stack developer",
-    "content": "Hey [Name]! As a full stack developer, imagine streamlining project management, automating repetitive tasks, & optimizing bids effortlessly with Orbity. Interested in boosting your productivity? Let's chat! 🚀 #FreelancerMadeEasy"
+    "content": "Hey [Name]! As a full stack developer, imagine streamlining project management, automating repetitive tasks, & optimizing bids effortlessly with Orbity. Interested in boosting your productivity? Let's chat! 🚀 #FreelancerMadeEasy",
+    "subject": "Boost Productivity with Orbity: Let's Chat! 🚀"
   },
   {
     "id": 105,
     "key": "react native mobile app specialist",
     "designation": "react native mobile app specialist",
-    "content": "Hey [Name], as a React Native pro, imagine streamlining your workflow with Orbity! Automate tasks, analyze projects, and bid smarter. Interested in giving it a try? Let's chat!"
+    "content": "Hey [Name], as a React Native pro, imagine streamlining your workflow with Orbity! Automate tasks, analyze projects, and bid smarter. Interested in giving it a try? Let's chat!",
+    "subject": "Boost Your React Native Workflow with Orbity!"
   },
   {
     "id": 106,
     "key": "software engineer",
     "designation": "software engineer",
-    "content": "Hey [Name]! As a software engineer, imagine automating tedious project tasks & optimizing bids effortlessly with Orbity. Boost your freelancing game! Excited to chat about how Orbity can elevate your workflow. Sound good? Interested in early access?"
+    "content": "Hey [Name]! As a software engineer, imagine automating tedious project tasks & optimizing bids effortlessly with Orbity. Boost your freelancing game! Excited to chat about how Orbity can elevate your workflow. Sound good? Interested in early access?",
+    "subject": "Boost Your Freelancing Game with Orbity! Interested?"
   },
   {
     "id": 107,
     "key": ".net",
     "designation": ".net",
-    "content": "Hey [Name], as a .NET developer, you'll love how Orbity streamlines project hunting and bidding tasks, saving you time and boosting your freelancing efficiency. Interested in giving it a try? 🚀"
+    "content": "Hey [Name], as a .NET developer, you'll love how Orbity streamlines project hunting and bidding tasks, saving you time and boosting your freelancing efficiency. Interested in giving it a try? 🚀",
+    "subject": "Boost Your Freelancing Efficiency with Orbity! 🚀"
   },
   {
     "id": 108,
     "key": "helping design & ad agencies get more leads quickly, with websites that build trust and convert",
     "designation": "helping design & ad agencies get more leads quickly, with websites that build trust and convert",
-    "content": "Hey [Name]! As a design & ad agency pro, imagine getting more leads quickly with websites that build trust & convert effortlessly. Ready to elevate your agency's success? Interested in boosting your leads? Let's chat!"
+    "content": "Hey [Name]! As a design & ad agency pro, imagine getting more leads quickly with websites that build trust & convert effortlessly. Ready to elevate your agency's success? Interested in boosting your leads? Let's chat!",
+    "subject": "Let’s connect!"
   }
 ]

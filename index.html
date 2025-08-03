@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background: #f7f9fc;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #e0e0e0;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .copy-btn {
+            margin-top: 4px;
+            padding: 4px 8px;
+            font-size: 0.8em;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .copy-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .url-link {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .url-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📇 LinkedIn Profiles</h1>
+    <input type="file" id="fileInput" accept=".json" />
+    <br><br>
+
+    <table id="profileTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>LinkedIn</th>
+                <th>Designation</th>
+                <th>Subject</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const tableBody = document.querySelector('#profileTable tbody');
+
+        fileInput.addEventListener('change', event => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    renderTable(data);
+                } catch (err) {
+                    alert('Invalid JSON file');
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        function renderTable(profiles) {
+            tableBody.innerHTML = ''; // clear existing rows
+            for (const profile of profiles) {
+                const row = document.createElement('tr');
+
+                const name = document.createElement('td');
+                name.textContent = profile.name || '-';
+
+                const url = document.createElement('td');
+                const link = document.createElement('a');
+                link.href = profile.url;
+                link.textContent = 'View Profile';
+                link.target = '_blank';
+                link.className = 'url-link';
+                url.appendChild(link);
+
+                const designation = document.createElement('td');
+                designation.textContent = profile.designation || '-';
+
+                const subject = document.createElement('td');
+                subject.innerHTML = `<div>${profile.subject || '-'}</div><button class="copy-btn" onclick="copyText('${escapeJS(profile.subject)}')">Copy</button>`;
+
+                const message = document.createElement('td');
+                message.innerHTML = `<div>${profile.message || '-'}</div><button class="copy-btn" onclick="copyText('${escapeJS(profile.message)}')">Copy</button>`;
+
+                row.appendChild(name);
+                row.appendChild(url);
+                row.appendChild(designation);
+                row.appendChild(subject);
+                row.appendChild(message);
+
+                tableBody.appendChild(row);
+            }
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(unescapeHTML(text)).then(() => {
+                alert('Copied to clipboard!');
+            });
+        }
+
+        function escapeJS(str = '') {
+            return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        }
+
+        function unescapeHTML(str = '') {
+            return str.replace(/&quot;/g, '"').replace(/\\'/g, "'");
+        }
+    </script>
+
+</body>
+
+</html>
