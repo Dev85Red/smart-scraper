@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LinkedIn Profiles</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-row">
+            <h1>📇 LinkedIn Profiles</h1>
+            <label class="file-label">
+                <input type="file" id="fileInput" accept=".json" />
+                <span>📁 Choose File</span>
+            </label>
+        </div>
+
+        <div id="toast-container"></div>
+
+        <div class="table-wrapper">
+            <table id="profileTable">
+                <colgroup>
+                    <col style="width: 4%" />
+                    <col style="width: 6%" />
+                    <col style="width: 10%" />
+                    <col style="width: 8%" />
+                    <col style="width: 17%" />
+                    <col style="width: 22%" />
+                    <col style="width: 40%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Status (Message)</th>
+                        <th>Name</th>
+                        <th>LinkedIn</th>
+                        <th>Designation</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
