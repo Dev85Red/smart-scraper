@@ -13,5 +13,6 @@ module.exports = {
         maxTime: 5,
         timeType: 'minutes' // options: 'seconds' | 'minutes' | 'hours' | 'days'
     },
-    searchKeywords: 'freelancer.com'
+    searchKeywords: 'freelancer.com',
+    searchCompany: 'freelancer.com'
 };

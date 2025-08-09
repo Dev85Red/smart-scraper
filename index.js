@@ -4,13 +4,15 @@ const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const sendConnectionRequests = require('./runners/send-connection');
 const { platforms } = require('./config');
-const runLinkedIn = require('./runners/linkedin');
+const { runSearchOnLinkedIn, getProfileUrlsFromCompany } = require('./runners/linkedin');
 const { waitInMiliSec } = require('./utils/utils');
 const { setBrowser } = require('./globals/browser');
 
 puppeteer.use(StealthPlugin());
 
 const isConnectMode = process.argv.includes('--send-connect');
+const isSearchMode = process.argv.includes('--search-profiles');
+const isCompanyProfileMode = process.argv.includes('--company-profiles');
 
 (async () => {
     let browser;
@@ -64,9 +66,14 @@ const isConnectMode = process.argv.includes('--send-connect');
             await sendConnectionRequests(browser);
             return;
         }
-        
-        await runLinkedIn(page);
 
+        if (isSearchMode) {
+            await runSearchOnLinkedIn(page);
+        }
+
+        if (isCompanyProfileMode) {
+            await getProfileUrlsFromCompany(page);
+        }
     } catch (err) {
         console.error('❌ Unexpected error in main workflow:', err.message);
     } finally {

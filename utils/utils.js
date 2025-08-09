@@ -19,5 +19,14 @@ module.exports = {
             days: 24 * 60 * 60 * 1000
         };
         return value * map[unit];
+    },
+    normalizeCompanyName(str = '') {
+        return str
+            .toLowerCase()
+            .replace(/\u00A0/g, ' ')            // non‑breaking spaces
+            .replace(/[.,™®]/g, '')             // punctuation/trademarks
+            .replace(/\b(inc|ltd|llc|corp|co|gmbh|plc|pte|s\.a\.|s\.r\.l)\b/g, '')
+            .replace(/\s+/g, ' ')               // collapse spaces
+            .trim();
     }
 }
