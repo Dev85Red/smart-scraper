@@ -167,8 +167,9 @@ async function getProfileUrlsFromCompany(page) {
     await clickPeopleTab(page);
 
     // 4) Harvest profile URLs (logs them)
-    let uniqueProfileUrls = await collectPeopleProfileLinks(page, { maxLoads: 2 }); // tweak loads as needed
+    let uniqueProfileUrls = await collectPeopleProfileLinks(page, { maxLoads: 1000 }); // tweak loads as needed
     console.log('[getProfileUrlsFromCompany] ✅ Profile URLs collected:', uniqueProfileUrls.length);
+    for (const url of uniqueProfileUrls) console.log(' -', url);
 
   } catch (err) {
     console.error('[getProfileUrlsFromCompany]❌ Error in LinkedIn flow:', err);

@@ -9,8 +9,8 @@ module.exports = {
         }
     },
     delayBetweenPages: {
-        minTime: 1,
-        maxTime: 5,
+        minTime: 3,
+        maxTime: 8,
         timeType: 'minutes' // options: 'seconds' | 'minutes' | 'hours' | 'days'
     },
     searchKeywords: 'freelancer.com',

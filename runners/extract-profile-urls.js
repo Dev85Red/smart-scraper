@@ -177,50 +177,118 @@ async function scrapeSingleProfile(href) {
     return data;
 }
 
-async function collectPeopleProfileLinks(page, { maxLoads = 10 } = {}) {
-    console.log('[collectPeopleProfileLinks] 👥 Collecting profile URLs…');
-    await page.waitForSelector(LinkedinSelectors.peopleListUL, { visible: true, timeout: 15000 });
+async function collectPeopleProfileLinks(
+    page,
+    {
+        maxLoads = 1000,
+        maxRetriesOnNoGrowth = 3,
+        extraDelayMin = 2,       // minutes for extra retries
+        skipGrowthCheckUntil = 3 // keep clicking for these initial passes
+    } = {}
+) {
+    const ts = () => new Date().toISOString();
+    const log = (...args) => console.log(ts(), ...args);
+
+    // safe wrappers for optional helpers (use existing if present)
+    const convertToMsSafe = (value, unit) => {
+        if (typeof convertToMs === 'function') return convertToMs(value, unit);
+        const map = { seconds: 1000, minutes: 60 * 1000, hours: 60 * 60 * 1000, days: 24 * 60 * 60 * 1000 };
+        return (map[unit] || 1000) * value;
+    };
+    const waitSafe = async (ms, randomize = false) => {
+        if (typeof waitInMiliSec === 'function') return waitInMiliSec(ms, randomize);
+        return page.waitForTimeout(ms);
+    };
+    const scrollSafe = async () => {
+        if (typeof randomScroll === 'function') {
+            try { await randomScroll(page); } catch (e) { log('[collectPeopleProfileLinks] ⚠️ randomScroll failed:', e.message); }
+        } else {
+            await page.waitForTimeout(300);
+        }
+    };
+
+    // wait for initial content (try people list then anchors)
+    try {
+        await page.waitForSelector(LinkedinSelectors.peopleListUL, { visible: true, timeout: 15000 });
+    } catch (_) {
+        log('[collectPeopleProfileLinks] ⚠️ peopleListUL not visible, falling back to profile anchors...');
+        try {
+            await page.waitForSelector(LinkedinSelectors.profileAnchors, { visible: true, timeout: 15000 });
+        } catch (err) {
+            log('[collectPeopleProfileLinks] ❌ Required LinkedIn selectors not found. Aborting.');
+            throw err;
+        }
+    }
 
     const found = new Set();
 
-    // helper: scrape current batch
+    // scrape current visible anchors and add to `found`
     const scrapeBatch = async () => {
-        const hrefs = await page.$$eval(LinkedinSelectors.profileAnchors, as =>
-            as.map(a => (a.getAttribute('href') || '').trim()).filter(Boolean)
-        );
-        for (const h of hrefs) found.add(h.split('?')[0]); // strip query for dedupe
-        console.log(`[collectPeopleProfileLinks] 📥 Batch size: ${hrefs.length} | Total unique: ${found.size}`);
+        const hrefs = await page.$$eval(LinkedinSelectors.profileAnchors, anchors =>
+            anchors
+                .map(a => (a.href || a.getAttribute && a.getAttribute('href') || '').split('?')[0])
+                .filter(Boolean)
+        ).catch(err => {
+            // If selector fails, return empty array
+            return [];
+        });
+
+        for (const h of hrefs) found.add(h);
+        log('[collectPeopleProfileLinks] 📥 Batch size:', hrefs.length, '| Total unique:', found.size);
+        return hrefs;
     };
 
-    // initial visible items scrape
+    // initial scrape
     await scrapeBatch();
 
-    // paginate via "Show more results"
-    for (let i = 0; i < maxLoads; i++) {
-        // try to locate a visible Show More button
-        const btn = await page.$(LinkedinSelectors.showMoreBtn);
-        if (!btn) {
-            console.log('[collectPeopleProfileLinks] 🛑 No Show More button found. Stopping.');
+    // read delayBetweenPages if present otherwise fallback defaults
+    const dbpMin = (typeof delayBetweenPages !== 'undefined' && delayBetweenPages.minTime) ? delayBetweenPages.minTime : 1;
+    const dbpMax = (typeof delayBetweenPages !== 'undefined' && delayBetweenPages.maxTime) ? delayBetweenPages.maxTime : 5;
+    const dbpType = (typeof delayBetweenPages !== 'undefined' && delayBetweenPages.timeType) ? delayBetweenPages.timeType : 'minutes';
+
+    for (let pass = 1; pass <= maxLoads; pass++) {
+        // try primary selector for "Show more"
+        let btnHandle = await page.$(LinkedinSelectors.showMoreBtn).catch(() => null);
+
+        // fallback: XPath looking for button whose text contains "Show more"
+        if (!btnHandle) {
+            try {
+                const handles = await page.$x("//button[contains(normalize-space(string(.)), 'Show more') or contains(normalize-space(string(.)), 'Show more results')]");
+                if (handles && handles.length) btnHandle = handles[0];
+            } catch (e) {
+                // ignore xpath errors
+            }
+        }
+
+        if (!btnHandle) {
+            log('[collectPeopleProfileLinks] 🛑 No Show More button found. Stopping.');
             break;
         }
 
-        const randomDelay = Math.floor(Math.random() * (delayBetweenPages.maxTime - delayBetweenPages.minTime + 1)) + delayBetweenPages.minTime;
-        const delayMs = convertToMs(randomDelay, delayBetweenPages.timeType);
+        // random wait between pages (configurable)
+        const randomDelayUnits = Math.floor(Math.random() * (dbpMax - dbpMin + 1)) + dbpMin;
+        const delayMs = convertToMsSafe(randomDelayUnits, dbpType);
+        log(`[collectPeopleProfileLinks] ⏳ Waiting ~${randomDelayUnits} ${dbpType} before clicking Show More (pass ${pass}/${maxLoads})...`);
+        await waitSafe(delayMs, true);
 
-        console.log(`⏳ Waiting ~${randomDelay} ${delayBetweenPages.timeType} after clicking Show More...`);
-        await waitInMiliSec(delayMs, true);
+        // measure before count using list items if available
+        const beforeCount = await page.$$eval(LinkedinSelectors.peopleListItems, els => els.length).catch(() => 0);
 
-        // remember current count to detect growth
-        const beforeCount = await page.$$eval(LinkedinSelectors.peopleListItems, els => els.length);
+        log(`[collectPeopleProfileLinks] ➕ Clicking Show More (pass ${pass}/${maxLoads})…`);
+        try {
+            await btnHandle.click({ delay: 80 });
+        } catch (clickErr) {
+            // fallback to page.evaluate click if direct .click fails
+            try { await page.evaluate(el => el.click(), btnHandle); } catch (e) {
+                log('[collectPeopleProfileLinks] ⚠️ click failed:', clickErr.message || e.message);
+            }
+        }
 
-        console.log(`[collectPeopleProfileLinks] ➕ Clicking Show More (pass ${i + 1}/${maxLoads})…`);
-        await Promise.allSettled([
-            btn.click({ delay: 80 }),
-        ]);
-        await waitInMiliSec(8000, true);
-        await randomScroll(page);
+        // short wait + human-like scroll
+        await waitSafe(8000, true);
+        await scrollSafe();
 
-        // wait until more items render or timeout softly
+        // wait for more <li> items if possible (soft timeout)
         try {
             await page.waitForFunction(
                 (sel, prev) => {
@@ -231,23 +299,37 @@ async function collectPeopleProfileLinks(page, { maxLoads = 10 } = {}) {
                 LinkedinSelectors.peopleListItems,
                 beforeCount
             );
-        } catch (_) {
-            // could be last page or slow load; continue anyway
+        } catch (e) {
+            // ignore - we'll retry logic below
         }
 
+        // scrape what we have after click
         await scrapeBatch();
+        let afterCount = await page.$$eval(LinkedinSelectors.peopleListItems, els => els.length).catch(() => found.size);
 
-        // if nothing new appeared, stop
-        const afterCount = await page.$$eval(LinkedinSelectors.peopleListItems, els => els.length);
+        // Warmup window: skip stall detection for initial passes so we dig deeper like old behavior
+        if (pass <= skipGrowthCheckUntil) {
+            log(`[collectPeopleProfileLinks] info: pass ${pass} <= skipGrowthCheckUntil(${skipGrowthCheckUntil}), not checking for stall.`);
+            continue;
+        }
+
+        // retry loop if no growth
+        let retries = 0;
+        while (afterCount <= beforeCount && retries < maxRetriesOnNoGrowth) {
+            retries++;
+            log(`[collectPeopleProfileLinks] ⚠️ No new items. Retry ${retries}/${maxRetriesOnNoGrowth} after extra wait...`);
+            const extraMs = convertToMsSafe(extraDelayMin, 'minutes');
+            await waitSafe(extraMs, true);
+            await scrollSafe();
+            await scrapeBatch();
+            afterCount = await page.$$eval(LinkedinSelectors.peopleListItems, els => els.length).catch(() => found.size);
+        }
+
         if (afterCount <= beforeCount) {
-            console.log('[collectPeopleProfileLinks] ⚠️ No additional items loaded. Stopping.');
+            log('[collectPeopleProfileLinks] 🛑 Still no new items after retries. Stopping.');
             break;
         }
     }
-
-    // log all for now (as requested)
-    // console.log('[collectPeopleProfileLinks] ✅ Final unique profile URLs:');
-    // for (const url of found) console.log(' -', url);
 
     return Array.from(found);
 }
